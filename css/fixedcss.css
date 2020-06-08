@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size:15px;
+    color: #333;
+    background-color: #eee;
+    height: 100vh;
+}
+
+
+
+h1 {
+    font-weight: 900;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h2 {
+    color: navy;
+    
+}
+
+p {
+    margin: 10px; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+    border: 1px solid green;
+    margin: 10px;
+    background-color: #333;
+    color: #fff;
+}
+
+aside {
+    font-style: italic;
+    letter-spacing: 1.5pt;
+
+    
+}
