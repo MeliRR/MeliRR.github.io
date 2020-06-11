@@ -1,5 +1,5 @@
 body {
-    font-size: 25px;
+    font-size: 16px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: aquamarine
 }
@@ -12,9 +12,10 @@ header > img {
   header{
     background-color:navy;
     color: whitesmoke;
-    border-radius: 1rem;
+    border-radius: 1.5rem;
     display: flex;
     align-items: center;
+    padding: .75rem;
     }
   
   
@@ -28,19 +29,31 @@ header nav ul li a{
     color: white;
     display: flex;
     text-decoration: none;
-    font-size: 1.1 rem;
+    font-size: 2 rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display: block;
-    padding: .50 rem;
-    
+    width: 150px;
+    weigth: auto;
+    padding: .2rem;
 
 }
+h1{
+    font-family: 'Parisienne', cursive;
+    font-size: 2.5rem;
+}
+    .active {
+        color: yellow;
+        
+        }
+
+
 main section p {
     margin: 5px;
-    border: 10px solid black;
-    padding:5px;
-    background-color: azure;
+    border: 10px solid whitesmoke;
+    padding: 1rem;
+    background-color: solid bisque;
 }
+
 footer {
     max-width: 960px;
     margin: 0 auto;
