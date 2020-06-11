@@ -13,7 +13,7 @@ header > img {
     background-color:navy;
     color: whitesmoke;
     border-radius: 1rem;
-    display: block;
+    display: flex;
     align-items: center;
     }
   
@@ -30,7 +30,7 @@ header nav ul li a{
     text-decoration: none;
     font-size: 1rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    display:block;
+    display: block;
     padding: .25rem;
     
 
