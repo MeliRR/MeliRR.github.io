@@ -1,7 +1,7 @@
 body {
     font-size: 16px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: aquamarine
+    background-color: #f5d4f5
 }
 
 header > img {
@@ -10,7 +10,7 @@ header > img {
 
 }
   header{
-    background-color:navy;
+    background-color:rgba(122, 122, 211, 0.363);
     color: whitesmoke;
     border-radius: 1.5rem;
     display: flex;
