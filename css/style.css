@@ -52,19 +52,23 @@ main section p {
     margin: 5px;
     border: 10px solid whitesmoke;
     padding: 1rem;
-    background-color: solid bisque;
+    background-color: solid 
+    bisque;
 }
 
 footer {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    
+
 }
 
 .social {
     text-align: right;
 }
-.social {
-    width: 5px;
+.social img {
+    width:50px;
     heigth: auto;
+    justify-content: right;
      
 }
