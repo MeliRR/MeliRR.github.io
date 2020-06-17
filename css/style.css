@@ -22,10 +22,10 @@ header > img {
   
   header nav ul{
     display: flex;
-    align-items: center
+    align-items: center;
     list-style: none;
-
 }
+
 header nav ul li a{
     color: white;
     display: flex;
@@ -34,14 +34,16 @@ header nav ul li a{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display: block;
     width: 150px;
-    weigth: auto;
+    height: auto;
     padding: .2rem;
-
 }
+
+
 h1{
     font-family: 'Parisienne', cursive;
     font-size: 3rem;
 }
+
     .active {
         color: yellow;
         
@@ -52,8 +54,7 @@ main section p {
     margin: 5px;
     border: 10px solid whitesmoke;
     padding: 1rem;
-    background-color: solid 
-    bisque;
+    background-color: solid bisque;
 }
 
 footer {
@@ -68,7 +69,7 @@ footer {
 }
 .social img {
     width:50px;
-    heigth: auto;
+    height: auto;
     justify-content: right;
      
 }
