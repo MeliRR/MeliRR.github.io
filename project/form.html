@@ -2,9 +2,18 @@
 <html lang="en-US">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <title>My WEB FORM PAGE </title>
 <style>
+    input {
+        padding: 7px;
+    }
+#feedback { 
+  ... /* add styling and layout properties of your own design here as needed */
+  display: none; /* we will make the element invisible until the form is submitted successfully */
+ }
 
 form {
   /* Center the form on the page */
@@ -72,33 +81,50 @@ button {
   margin-left: .5em;
 </style>
 </head>
-
+<h1> HTML FORMS </h1> 
     <body>
-        <form action="/my-handling-form-page" method="post">
-        <ul>
-         <li>
-           <label for="name">Name:</label>
-           <input type="text" id="name" name="user_name">
-         </li>
-         <li>
-           <label for="mail">E-mail:</label>
-           <input type="email" id="mail" name="user_email">
-         </li>
-         <li>
-           <label for="msg">Message:</label>
-           <textarea id="msg" name="user_message"></textarea>
-         </li>
-         <li class="button">
-            <button type="submit">Send your message</button>
-         </li>
-        </ul>
+    <div id="feedback">
+    
+    
+    
+    </div>
+        <form action="/my-handling-form-page" method="post"> 
+ <ul>
+  <li>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="user_name" />
+  </li>
+  <li>
+    <label for="mail">E-mail:</label>
+    <input type="email" id="mail" name="user_email" />
+  </li>
+  <li>
+    <label for="msg">Message:</label>
+    <textarea id="msg" name="user_message"></textarea>
+  </li>
+  <input type="submit" value="submit">
+         
        </form>
 
-       
-     
-      </li>
     </body>
     
+    <script>
+  // get the feedback div element so we can do something with it.
+  const feedbackElement = document.getElementById('feedback');
+  // get the form element so we can read what was entered in it.
+  const formElement = document.forms[0];
+  
+  // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+  formElement.addEventListener('submit', function(e) {
+    // stop the form from doing the default action
+    e.preventDefault();
+    // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+    feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+    // make the feedback element visible.
+    feedbackElement.style.display = "block";
+  });
+</script>
 
-  </body>
+
+  
 </html>
