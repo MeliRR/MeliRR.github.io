@@ -1,45 +1,111 @@
-* {
-    box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
+
+:root {
+    --primary-color: #E2C044;
+    --secondary-color: #D3D0CB;
+    --accent1-color: #9FB1BC;
+    --accent2-color: #2E5266;
+    --heading-font: "IM Fell French Canon SC";
+    --paragraph-font: font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    background-color: var(--primary-color)
 }
 
 body {
-    font-size:15px;
-    color: #333;
-    background-color: #eee;
-    height: 100vh;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 1em
 }
 
-
-
-h1 {
-    font-weight: 900;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+img {
+    max-width: 100%
 }
 
-h2 {
-    color: navy;
-    
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--heading-font);
+    color:
+}
+
+header {
+    padding: 1em;
+    text-align: center;
+    color: var(--accent2-color);
+    background-color:
+}
+
+header>h1 {
+    color:
 }
 
 p {
-    margin: 10px; 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--paragraph-font);
+    color: ;
+    padding: 1em
 }
 
-section {
-    border: 1px solid green;
-    margin: 10px;
-    background-color: #333;
-    color: #fff;
+.colors {
+    width: 100%;
+    min-width: 350px;
+    margin: auto;
+    text-align: center
 }
 
-aside {
-    font-style: italic;
-    letter-spacing: 1.5pt;
-
-    
+.colors th {
+    background-color: #999
 }
- img {
-    width:50px;
-    height: auto;
-    justify-content: right;
+
+.colors td {
+    width: 25%;
+    height: 3em
+}
+
+.primary {
+    background-color: var(--primary-color)
+}
+
+.secondary {
+    background-color: var(--secondary-color)
+}
+
+.accent1 {
+    background-color: var(--accent1-color)
+}
+
+.accent2 {
+    background-color: var(--accent2-color)
+}
+
+nav {
+    background-color: ;
+    line-height: 3em;
+    text-align: center;
+    font-size: 1.2em
+}
+
+nav>ul {
+    list-style-type: none;
+    display: flex
+}
+
+nav a {
+    padding: 1em;
+    min-width: 70px
+}
+
+nav a:link,
+nav a:visited {
+    color:
+}
+
+nav a:hover {
+    color: ;
+    background-color:
+}
