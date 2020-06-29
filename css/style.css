@@ -18,7 +18,11 @@ header > img {
     padding: .75rem;
     justify-content: space-around;
     }
-  
+  .banner-box{
+      align align-items: center;
+      width: 100 px
+    
+  }
   
   header nav ul{
     display: flex;
