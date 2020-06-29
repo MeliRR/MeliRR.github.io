@@ -36,40 +36,83 @@
         
 
         <section>
-            <h2></h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, architecto. Dolore pariatur quaerat
-                deserunt, vitae, omnis assumenda veritatis optio fuga repudiandae delectus accusantium in harum dolor
-                quo culpa nobis? Omnis?</p>
-            <img src="/images/temple1.png" alt="Temple of Tijuana" />
+            <h2>Book your place now!</h2>
+            <p>We are very happy to welcome you, we have flexible policies for cancellations and changes</p>
+            <img src="/images/reservation.png" alt="Temple of Tijuana" />
         </section>
 
 
 
-        <section>
-            <h3>Home </h3>
-            <p>
-                As you go over our website you will identify the reasons why we are the most popular hotel inn for
-                temple visitors, do not miss out!
-
-            </p>
-        </section>
-
-        <section>
-            <h2></h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo excepturi facere deleniti dolor quis
-                doloribus hic vitae qui maxime nesciunt, a repellat ipsa repellendus nemo id sint odit itaque eius
-                dolore eum quidem iste. Mollitia nam corporis doloremque reiciendis ex delectus praesentium provident,
-                aperiam quos vel debitis quo eos pariatur!</p>
-            <img src="" alt="" />
-        </section>
-
-        <h3>Amenities</h3>
-        <p>From free breakfast to pool services, we have everything!</p>
-        <h3>Temple Spotlight</h3>
-        <p> We are providing our services to the Oakland California temple</p>
-        <h3>Reservations </h3>
-        <p>You can call us or get in contact via Whatsapp to 332456789 or via email to the following
-            addres:reservations@templinn.com </p>
+        <div class="container">
+            <div class="box 1">
+                <h3>Be my guest</h3>
+            <input type="text" size="30"><br>
+            </div>
+            <div class="box 2">  
+              <h3>Start Date</h3>
+                <label for="startdate"></label>
+                <input type="date" id="startdate" name="start_date">
+            </div>
+            <div class="box 3">
+              <h3>End Date</h3>
+                <label for="enddate"></label>
+                        <input type="date" id="enddate" name="end_date">
+            </div>
+          </div>
+              <form action="post">
+                <fieldset>
+                    <legend>Enter your information:</legend>
+                <ul class="form">
+                    <li>
+                        <label for="name">Your full name here:</label>
+                        <input type="text" id="name" name="user_name">
+                    </li>
+                    <li>
+                        <label for="mail">E-mail:</label>
+                        <input type="email" id="mail" name="user_email">
+                    </li>
+                    <li>
+                        <label for="location">Phone Number:</label>
+                        <input type="number" id="phone" name="user_phone">
+                    </li>
+                </ul>
+                </fieldset>
+            </form>
+            <form action="post">
+                <fieldset>
+                    <legend>Payment:</legend>
+                <ul class="form">
+                    <li>
+                      <label for="cardtype">Card type:</label>
+                      <select required name="card_type" id="cardtype">
+                          <option value="">Select a card type</option>
+                          <option value="Credit">Credit</option>
+                          <option value="Debit">Debit</option>
+                         
+                      </select>
+                    </li>
+                    <li>
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="cardname" name="user_name">
+                    </li>
+                    <li>
+                        <label for="number">Card Number:</label>
+                        <input type="text" id="number" name="user_number">
+                    </li>
+                    <li>
+                        <label for="startdate">Expiration Date:</label>
+                        <input type="date" id="expirationdate" name="start_date">
+                    </li>
+                    <li>
+                      <label for="number">CVV:</label>
+                      <input type="text" id="location" name="user_phone">
+                  </li>
+          <li>
+                        <button type="submit">Complete your reservation now!</button>
+              </li>      
+                </ul>
+                </fieldset>
+            </form>
 
     </main>
 
