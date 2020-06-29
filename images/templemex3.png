@@ -1,0 +1,573 @@
+<!doctype html>
+<!--[if lt IE 9]><html class="no-js no-svg ie lt-ie9 lt-ie8 lt-ie7" lang="en-US"> <![endif]-->
+<!--[if IE 9]><html class="no-js no-svg ie ie9 lt-ie9 lt-ie8" lang="en-US"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js no-svg" lang="en-US"> <!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta name="description" content="The Church News is an official publication of The Church of Jesus Christ of Latter-day Saints. Jointly published by the Deseret News and The Church of Jesus Christ of Latter-day Saints, its content supports the doctrines, principles and practices of the Church.">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="apple-itunes-app" content="app-id=1476599301, affiliate-data=pt=120043990&ct=smartbanner&mt=8">
+<link rel="pingback" href="https://www.thechurchnews.com/xmlrpc.php" />
+<link href="https://fonts.googleapis.com/css?family=Spectral:300,300i,400,400i,700,700i,800,800i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Barlow:700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:400,500" rel="stylesheet">
+<link rel="stylesheet" href="/wp-content/themes/churchnews/build/lib/bLazy.2db4ab7a.css" type="text/css" media="screen" />
+<script>
+            window.wp_locale = "en";
+        </script>
+<script type="text/javascript">
+        window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{s.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(25),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,s){try{l?l-=1:o(s||new UncaughtException(t,e,n),!0)}catch(f){try{i("ierr",[f,c.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t,e){var n=e?null:c.now();i("err",[t,n])}var i=t("handle"),a=t(26),s=t("ee"),c=t("loader"),f=t("gos"),u=window.onerror,d=!1,p="nr@seenError",l=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(13),t(12),"addEventListener"in window&&t(6),c.xhrWrappable&&t(14),d=!0)}s.on("fn-start",function(t,e,n){d&&(l+=1)}),s.on("fn-err",function(t,e,n){d&&!n[p]&&(f(n,p,function(){return!0}),this.thrown=!0,o(n))}),s.on("fn-end",function(){d&&!this.thrown&&l>0&&(l-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(){L++,C=g.hash,this[u]=y.now()}function o(){L--,g.hash!==C&&i(0,!0);var t=y.now();this[h]=~~this[h]+t-this[u],this[d]=t}function i(t,e){E.emit("newURL",[""+g,e])}function a(t,e){t.on(e,function(){this[e]=y.now()})}var s="-start",c="-end",f="-body",u="fn"+s,d="fn"+c,p="cb"+s,l="cb"+c,h="jsTime",m="fetch",v="addEventListener",w=window,g=w.location,y=t("loader");if(w[v]&&y.xhrWrappable){var x=t(10),b=t(11),E=t(8),O=t(6),R=t(13),P=t(7),T=t(14),N=t(9),M=t("ee"),S=M.get("tracer");t(16),y.features.spa=!0;var C,L=0;M.on(u,r),M.on(p,r),M.on(d,o),M.on(l,o),M.buffer([u,d,"xhr-done","xhr-resolved"]),O.buffer([u]),R.buffer(["setTimeout"+c,"clearTimeout"+s,u]),T.buffer([u,"new-xhr","send-xhr"+s]),P.buffer([m+s,m+"-done",m+f+s,m+f+c]),E.buffer(["newURL"]),x.buffer([u]),b.buffer(["propagate",p,l,"executor-err","resolve"+s]),S.buffer([u,"no-"+u]),N.buffer(["new-jsonp","cb-start","jsonp-error","jsonp-end"]),a(T,"send-xhr"+s),a(M,"xhr-resolved"),a(M,"xhr-done"),a(P,m+s),a(P,m+"-done"),a(N,"new-jsonp"),a(N,"jsonp-end"),a(N,"cb-start"),E.on("pushState-end",i),E.on("replaceState-end",i),w[v]("hashchange",i,!0),w[v]("load",i,!0),w[v]("popstate",function(){i(0,L>1)},!0)}},{}],5:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(13),s=t(12),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",p="resource",l="-start",h="-end",m="fn"+l,v="fn"+h,w="bstTimer",g="pushState",y=t("loader");y.features.stn=!0,t(8),"addEventListener"in window&&t(6);var x=NREUM.o.EV;o.on(m,function(t,e){var n=t[0];n instanceof x&&(this.bstStart=y.now())}),o.on(v,function(t,e){var n=t[0];n instanceof x&&i("bst",[n,e,this.bstStart,y.now()])}),a.on(m,function(t,e,n){this.bstStart=y.now(),this.bstType=n}),a.on(v,function(t,e){i(w,[e,this.bstStart,y.now(),this.bstType])}),s.on(m,function(){this.bstStart=y.now()}),s.on(v,function(t,e){i(w,[e,this.bstStart,y.now(),"requestAnimationFrame"])}),o.on(g+l,function(t){this.time=y.now(),this.startPath=location.pathname+location.hash}),o.on(g+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(p)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(p)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],6:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),s=t("wrap-function")(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1],r=c(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?s(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],7:[function(t,e,n){function r(t,e,n){var r=t[e];"function"==typeof r&&(t[e]=function(){var t=i(arguments),e={};o.emit(n+"before-start",[t],e);var a;e[m]&&e[m].dt&&(a=e[m].dt);var s=r.apply(this,t);return o.emit(n+"start",[t,a],s),s.then(function(t){return o.emit(n+"end",[null,t],s),t},function(t){throw o.emit(n+"end",[t],s),t})})}var o=t("ee").get("fetch"),i=t(26),a=t(25);e.exports=o;var s=window,c="fetch-",f=c+"body-",u=["arrayBuffer","blob","json","text","formData"],d=s.Request,p=s.Response,l=s.fetch,h="prototype",m="nr@context";d&&p&&l&&(a(u,function(t,e){r(d[h],e,f),r(p[h],e,f)}),r(s,"fetch",c),o.on(c+"end",function(t,e){var n=this;if(e){var r=e.headers.get("content-length");null!==r&&(n.rxSize=r),o.emit(c+"done",[null,e],n)}else o.emit(c+"done",[t],n)}))},{}],8:[function(t,e,n){var r=t("ee").get("history"),o=t("wrap-function")(r);e.exports=r;var i=window.history&&window.history.constructor&&window.history.constructor.prototype,a=window.history;i&&i.pushState&&i.replaceState&&(a=i),o.inPlace(a,["pushState","replaceState"],"-")},{}],9:[function(t,e,n){function r(t){function e(){c.emit("jsonp-end",[],p),t.removeEventListener("load",e,!1),t.removeEventListener("error",n,!1)}function n(){c.emit("jsonp-error",[],p),c.emit("jsonp-end",[],p),t.removeEventListener("load",e,!1),t.removeEventListener("error",n,!1)}var r=t&&"string"==typeof t.nodeName&&"script"===t.nodeName.toLowerCase();if(r){var o="function"==typeof t.addEventListener;if(o){var a=i(t.src);if(a){var u=s(a),d="function"==typeof u.parent[u.key];if(d){var p={};f.inPlace(u.parent,[u.key],"cb-",p),t.addEventListener("load",e,!1),t.addEventListener("error",n,!1),c.emit("new-jsonp",[t.src],p)}}}}}function o(){return"addEventListener"in window}function i(t){var e=t.match(u);return e?e[1]:null}function a(t,e){var n=t.match(p),r=n[1],o=n[3];return o?a(o,e[r]):e[r]}function s(t){var e=t.match(d);return e&&e.length>=3?{key:e[2],parent:a(e[1],window)}:{key:t,parent:window}}var c=t("ee").get("jsonp"),f=t("wrap-function")(c);if(e.exports=c,o()){var u=/[?&](?:callback|cb)=([^&#]+)/,d=/(.*)\.([^.]+)/,p=/^(\w+)(\.|$)(.*)$/,l=["appendChild","insertBefore","replaceChild"];Node&&Node.prototype&&Node.prototype.appendChild?f.inPlace(Node.prototype,l,"dom-"):(f.inPlace(HTMLElement.prototype,l,"dom-"),f.inPlace(HTMLHeadElement.prototype,l,"dom-"),f.inPlace(HTMLBodyElement.prototype,l,"dom-")),c.on("dom-start",function(t){r(t[0])})}},{}],10:[function(t,e,n){var r=t("ee").get("mutation"),o=t("wrap-function")(r),i=NREUM.o.MO;e.exports=r,i&&(window.MutationObserver=function(t){return this instanceof i?new i(o(t,"fn-")):i.apply(this,arguments)},MutationObserver.prototype=i.prototype)},{}],11:[function(t,e,n){function r(t){var e=a.context(),n=s(t,"executor-",e),r=new f(n);return a.context(r).getCtx=function(){return e},a.emit("new-promise",[r,e],e),r}function o(t,e){return e}var i=t("wrap-function"),a=t("ee").get("promise"),s=i(a),c=t(25),f=NREUM.o.PR;e.exports=a,f&&(window.Promise=r,["all","race"].forEach(function(t){var e=f[t];f[t]=function(n){function r(t){return function(){a.emit("propagate",[null,!o],i),o=o||!t}}var o=!1;c(n,function(e,n){Promise.resolve(n).then(r("all"===t),r(!1))});var i=e.apply(f,arguments),s=f.resolve(i);return s}}),["resolve","reject"].forEach(function(t){var e=f[t];f[t]=function(t){var n=e.apply(f,arguments);return t!==n&&a.emit("propagate",[t,!0],n),n}}),f.prototype["catch"]=function(t){return this.then(null,t)},f.prototype=Object.create(f.prototype,{constructor:{value:r}}),c(Object.getOwnPropertyNames(f),function(t,e){try{r[e]=f[e]}catch(n){}}),a.on("executor-start",function(t){t[0]=s(t[0],"resolve-",this),t[1]=s(t[1],"resolve-",this)}),a.on("executor-err",function(t,e,n){t[1](n)}),s.inPlace(f.prototype,["then"],"then-",o),a.on("then-start",function(t,e){this.promise=e,t[0]=s(t[0],"cb-",this),t[1]=s(t[1],"cb-",this)}),a.on("then-end",function(t,e,n){this.nextPromise=n;var r=this.promise;a.emit("propagate",[r,!0],n)}),a.on("cb-end",function(t,e,n){a.emit("propagate",[n,!0],this.nextPromise)}),a.on("propagate",function(t,e,n){this.getCtx&&!e||(this.getCtx=function(){if(t instanceof Promise)var e=a.context(t);return e&&e.getCtx?e.getCtx():this})}),r.toString=function(){return""+f})},{}],12:[function(t,e,n){var r=t("ee").get("raf"),o=t("wrap-function")(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],13:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t("wrap-function")(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";e.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],14:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",s)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,g,"fn-",s)}function i(t){y.push(t),h&&(b?b.then(a):v?v(a):(E=-E,O.data=E))}function a(){for(var t=0;t<y.length;t++)r([],y[t]);y.length&&(y=[])}function s(t,e){return e}function c(t,e){for(var n in t)e[n]=t[n];return e}t(6);var f=t("ee"),u=f.get("xhr"),d=t("wrap-function")(u),p=NREUM.o,l=p.XHR,h=p.MO,m=p.PR,v=p.SI,w="readystatechange",g=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],y=[];e.exports=u;var x=window.XMLHttpRequest=function(t){var e=new l(t);try{u.emit("new-xhr",[e],e),e.addEventListener(w,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(c(l,x),x.prototype=l.prototype,d.inPlace(x.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),h){var b=m&&m.resolve();if(!v&&!m){var E=1,O=document.createTextNode(E);new h(a).observe(O,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===w||a()})},{}],15:[function(t,e,n){function r(t){if(!i(t))return null;var e=window.NREUM;if(!e.loader_config)return null;var n=(e.loader_config.accountID||"").toString()||null,r=(e.loader_config.agentID||"").toString()||null,s=(e.loader_config.trustKey||"").toString()||null;if(!n||!r)return null;var c=a.generateCatId(),f=a.generateCatId(),u=Date.now(),d=o(c,f,u,n,r,s);return{header:d,guid:c,traceId:f,timestamp:u}}function o(t,e,n,r,o,i){var a="btoa"in window&&"function"==typeof window.btoa;if(!a)return null;var s={v:[0,1],d:{ty:"Browser",ac:r,ap:o,id:t,tr:e,ti:n}};return i&&r!==i&&(s.d.tk=i),btoa(JSON.stringify(s))}function i(t){var e=!1,n=!1,r={};if("init"in NREUM&&"distributed_tracing"in NREUM.init&&(r=NREUM.init.distributed_tracing,n=!!r.enabled),n)if(t.sameOrigin)e=!0;else if(r.allowed_origins instanceof Array)for(var o=0;o<r.allowed_origins.length;o++){var i=s(r.allowed_origins[o]);if(t.hostname===i.hostname&&t.protocol===i.protocol&&t.port===i.port){e=!0;break}}return n&&e}var a=t(23),s=t(17);e.exports={generateTracePayload:r,shouldGenerateTrace:i}},{}],16:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<p;r++)t.removeEventListener(d[r],this.listener,!1);e.aborted||(n.duration=a.now()-this.startTime,this.loadCaptureCalled||4!==t.readyState?null==e.status&&(e.status=0):i(this,t),n.cbTime=this.cbTime,u.emit("xhr-done",[t],t),s("xhr",[e,n,this.startTime]))}}function o(t,e){var n=c(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.parsedOrigin=c(e),t.sameOrigin=t.parsedOrigin.sameOrigin}function i(t,e){t.params.status=e.status;var n=v(e,t.lastSize);if(n&&(t.metrics.rxSize=n),t.sameOrigin){var r=e.getResponseHeader("X-NewRelic-App-Data");r&&(t.params.cat=r.split(", ").pop())}t.loadCaptureCalled=!0}var a=t("loader");if(a.xhrWrappable){var s=t("handle"),c=t(17),f=t(15).generateTracePayload,u=t("ee"),d=["load","error","abort","timeout"],p=d.length,l=t("id"),h=t(21),m=t(20),v=t(18),w=window.XMLHttpRequest;a.features.xhr=!0,t(14),t(7),u.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,e.loadCaptureCalled=!1,t.addEventListener("load",function(n){i(e,t)},!1),h&&(h>34||h<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),u.on("open-xhr-start",function(t){this.params={method:t[0]},o(this,t[1]),this.metrics={}}),u.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid);var n=f(this.parsedOrigin);n&&n.header&&(e.setRequestHeader("newrelic",n.header),this.dt=n)}),u.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=m(r);i&&(n.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"!==t.type||o.loadCaptureCalled||(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}};for(var s=0;s<p;s++)e.addEventListener(d[s],this.listener,!1)}),u.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),u.on("xhr-load-added",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),u.on("xhr-load-removed",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),u.on("addEventListener-end",function(t,e){e instanceof w&&"load"===t[0]&&u.emit("xhr-load-added",[t[1],t[2]],e)}),u.on("removeEventListener-end",function(t,e){e instanceof w&&"load"===t[0]&&u.emit("xhr-load-removed",[t[1],t[2]],e)}),u.on("fn-start",function(t,e,n){e instanceof w&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),u.on("fn-end",function(t,e){this.xhrCbStart&&u.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,e],e)}),u.on("fetch-before-start",function(t){var e,n=t[1]||{};"string"==typeof t[0]?e=t[0]:t[0]&&t[0].url&&(e=t[0].url),e&&(this.parsedOrigin=c(e),this.sameOrigin=this.parsedOrigin.sameOrigin);var r=f(this.parsedOrigin);if(r&&r.header){var o=r.header;if("string"==typeof t[0]){var i={};for(var a in n)i[a]=n[a];i.headers=new Headers(n.headers||{}),i.headers.set("newrelic",o),this.dt=r,t.length>1?t[1]=i:t.push(i)}else t[0]&&t[0].headers&&(t[0].headers.append("newrelic",o),this.dt=r)}})}},{}],17:[function(t,e,n){var r={};e.exports=function(t){if(t in r)return r[t];var e=document.createElement("a"),n=window.location,o={};e.href=t,o.port=e.port;var i=e.href.split("://");!o.port&&i[1]&&(o.port=i[1].split("/")[0].split("@").pop().split(":")[1]),o.port&&"0"!==o.port||(o.port="https"===i[0]?"443":"80"),o.hostname=e.hostname||n.hostname,o.pathname=e.pathname,o.protocol=i[0],"/"!==o.pathname.charAt(0)&&(o.pathname="/"+o.pathname);var a=!e.protocol||":"===e.protocol||e.protocol===n.protocol,s=e.hostname===document.domain&&e.port===n.port;return o.sameOrigin=a&&(!e.hostname||s),"/"===o.pathname&&(r[t]=o),o}},{}],18:[function(t,e,n){function r(t,e){var n=t.responseType;return"json"===n&&null!==e?e:"arraybuffer"===n||"blob"===n||"json"===n?o(t.response):"text"===n||"document"===n||""===n||void 0===n?o(t.responseText):void 0}var o=t(20);e.exports=r},{}],19:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[f.now()].concat(s(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(25),s=t(26),c=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(t,e){u[e]=o(p+e,!0,"api")}),u.addPageAction=o(p+"addPageAction",!0),u.setCurrentRouteName=o(p+"routeName",!0),e.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[f.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return e.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],n),t}finally{c.emit("fn-end",[f.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){h[e]=o(l+e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now(),!1,e])}},{}],20:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],21:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],22:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?c("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&c("timing",["fcp",Math.floor(t.startTime)])})}function o(t,e){var n=t.getEntries();n.length>0&&c("lcp",[n[n.length-1]])}function i(t){if(t instanceof u&&!p){var e,n=Math.round(t.timeStamp);e=n>1e12?Date.now()-n:f.now()-n,p=!0,c("timing",["fi",n,{type:t.type,fid:e}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,s,c=t("handle"),f=t("loader"),u=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),s=new PerformanceObserver(o);try{a.observe({entryTypes:["paint"]}),s.observe({entryTypes:["largest-contentful-paint"]})}catch(d){}}if("addEventListener"in document){var p=!1,l=["click","keydown","mousedown","pointerdown","touchstart"];l.forEach(function(t){document.addEventListener(t,i,!1)})}}},{}],23:[function(t,e,n){function r(){function t(){return e?15&e[n++]:16*Math.random()|0}var e=null,n=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&(e=r.getRandomValues(new Uint8Array(31)));for(var o,i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",a="",s=0;s<i.length;s++)o=i[s],"x"===o?a+=t().toString(16):"y"===o?(o=3&t()|8,a+=o.toString(16)):a+=o;return a}function o(){function t(){return e?15&e[n++]:16*Math.random()|0}var e=null,n=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&Uint8Array&&(e=r.getRandomValues(new Uint8Array(31)));for(var o=[],i=0;i<16;i++)o.push(t().toString(16));return o.join("")}e.exports={generateUuid:r,generateCatId:o}},{}],24:[function(t,e,n){function r(t,e){if(!o)return!1;if(t!==o)return!1;if(!e)return!0;if(!i)return!1;for(var n=i.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var s=navigator.userAgent,c=s.match(a);c&&s.indexOf("Chrome")===-1&&s.indexOf("Chromium")===-1&&(o="Safari",i=c[1])}e.exports={agent:o,version:i,match:r}},{}],25:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],26:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],27:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?c(t,s,i):i()}function n(n,r,o,i){if(!p.aborted||i){t&&t(n,r,o);for(var a=e(o),s=m(n),c=s.length,f=0;f<c;f++)s[f].apply(a,r);var d=u[y[n]];return d&&d.push([x,n,r,a]),a}}function l(t,e){g[t]=m(t).concat(e)}function h(t,e){var n=g[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return g[t]||[]}function v(t){return d[t]=d[t]||o(n)}function w(t,e){f(t,function(t,n){e=e||"feature",y[n]=e,e in u||(u[e]=[])})}var g={},y={},x={on:l,addEventListener:l,removeEventListener:h,emit:n,get:v,listeners:m,context:e,buffer:w,abort:a,aborted:!1};return x}function i(){return new r}function a(){(u.api||u.feature)&&(p.aborted=!0,u=p.backlog={})}var s="nr@context",c=t("gos"),f=t(25),u={},d={},p=e.exports=o();p.backlog=u},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!E++){var t=b.info=NREUM.info,e=l.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();f(y,function(e,n){t[e]||(t[e]=n)}),c("mark",["onload",a()+b.offset],null,"api");var n=l.createElement("script");n.src="https://"+t.agent,e.parentNode.insertBefore(n,e)}}function o(){"complete"===l.readyState&&i()}function i(){c("mark",["domContent",a()+b.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(s=Math.max((new Date).getTime(),s))-b.offset}var s=(new Date).getTime(),c=t("handle"),f=t(25),u=t("ee"),d=t(24),p=window,l=p.document,h="addEventListener",m="attachEvent",v=p.XMLHttpRequest,w=v&&v.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:v,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var g=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-spa-1167.min.js"},x=v&&w&&w[h]&&!/CriOS/.test(navigator.userAgent),b=e.exports={offset:s,now:a,origin:g,features:{},xhrWrappable:x,userAgent:d};t(19),t(22),l[h]?(l[h]("DOMContentLoaded",i,!1),p[h]("load",r,!1)):(l[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",s],null,"api");var E=0,O=t(27)},{}],"wrap-function":[function(t,e,n){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(26),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;e.exports=function(t,e){function n(t,e,n,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof n?n(r,a):n||{}}catch(f){p([f,"",[r,a,o],s])}u(e+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(d){throw u(e+"err",[r,a,d],s),d}finally{u(e+"end",[r,a,c],s)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,e,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<e.length;c++)s=e[c],a=t[s],r(a)||(t[s]=n(a,f?s+o:o,i,s))}function u(n,r,o){if(!c||e){var i=c;c=!0;try{t.emit(n,r,o,e)}catch(a){p([a,n,r,o])}c=i}}function d(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){p([r])}for(var o in t)s.call(t,o)&&(e[o]=t[o]);return e}function p(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),n.inPlace=f,n.flag=a,n}},{}]},{},["loader",2,16,5,3,4]);
+        ;NREUM.loader_config={accountID:"2683367",trustKey:"2683367",agentID:"261759354",licenseKey:"NRJS-72b55e7c71081e38261",applicationID:"261759354"}
+        ;NREUM.info={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",licenseKey:"NRJS-72b55e7c71081e38261",applicationID:"261759354",sa:1}
+        </script>
+<script type='text/javascript'>
+            /** CONFIGURATION START **/
+            var _sf_startpt = (new Date()).getTime();
+            var _sf_async_config = {"uid":21057,"domain":"ldschurchnews.com","useCanonical":true,"authors":"Gerry Avant","sections":"www.thechurchnews.com,History Revisited"};
+            /** CONFIGURATION END **/
+            function loadChartbeat() {
+                var e = document.createElement('script');
+                var n = document.getElementsByTagName('script')[0];
+                e.type = 'text/javascript';
+                e.async = true;
+                e.src = '//static.chartbeat.com/js/chartbeat.js';
+                n.parentNode.insertBefore(e, n);
+            }
+            loadChartbeat();
+        </script>
+<script>
+            (function() {
+                function uniqueId() {
+                    var b = '', c = '', n = 16, nb = n * 8;
+                    if('crypto' in window && typeof Uint8Array != 'undefined') {
+                        var a = new Uint8Array(n);
+                        crypto.getRandomValues(a);
+                        b = [].slice.call(a).map(function(c) {
+                            return String.fromCharCode(c);
+                        }).join('');
+                    } else {
+                        for(var i = 0; i < nb; i++) {
+                            c += Math.random() > 0.5 ? '1' : '0';
+                            if(c.length == 8) {
+                                b += String.fromCharCode(parseInt(c, 2)); c = '';
+                            }
+                        }
+                    }
+                    return btoa(b).replace(/[/+=]/g, '');
+                }
+                window.pageviewid = uniqueId();
+                window.ldscnUniqueId = uniqueId;
+            })();
+        </script>
+
+<script>(function(w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({
+                    'gtm.start':
+                            new Date().getTime(), event: 'gtm.js',
+                });
+                var f = d.getElementsByTagName(s)[0],
+                        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+                j.async = true;
+                j.src =
+                        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-T3LWQZ8');</script>
+
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+<script>
+            var googletag = googletag || {};
+            googletag.cmd = googletag.cmd || [];
+            googletag.cmd.push(function() {
+                googletag.pubads().enableSingleRequest();
+                googletag.pubads().collapseEmptyDivs();
+                googletag.enableServices();
+            });
+        </script>
+<script>
+            window.dataLayer = window.dataLayer || [];
+            ( [
+    {
+        "brandDetails": {
+            "entity": "Deseret News - Church News",
+            "objective": "Content"
+        },
+        "pageDetails": {
+            "pageviewType": "Standard",
+            "siteVersionNumber": "Not Specified",
+            "template": "default",
+            "siteSection1": "History Revisited",
+            "siteSection2": "Not Specified",
+            "siteSection3": "Not Specified",
+            "siteSection4": "Not Specified",
+            "timePosted": "2018-06-22T09:00:00+0000",
+            "publishDate": "2018-06-22",
+            "authorName": "Gerry Avant",
+            "authorID": "88",
+            "topic": "History Revisited",
+            "wordCount": 668,
+            "hasVideo": false,
+            "videoCount": 0,
+            "commentCount": "Not Specified",
+            "contentWidget": "Not Specified",
+            "contentWidgetCount": "Not Specified",
+            "hasPhotos": true,
+            "photoCount": 2,
+            "previousURL": "Not Specified",
+            "contentSource": "wordpress"
+        },
+        "sessionDetails": {
+            "loginState": "Not Specified",
+            "loginMethod": "Not Specified"
+        },
+        "userDetails": {
+            "userID": "Not Specified"
+        }
+    },
+    {
+        "event": "data-layer-initialized"
+    }
+] || []).forEach(function(layer) {
+                window.dataLayer.push(layer);
+            });
+        </script>
+
+<title>The most memorable part of the Mexico City temple dedication was these words from President Hinckley - Church News</title>
+<meta name="robots" content="index, follow" />
+<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+<link rel="canonical" href="https://www.thechurchnews.com/history-revisited/2018-06-22/the-most-memorable-part-of-the-mexico-city-temple-dedication-were-these-words-from-president-hinckley-10646" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="The most memorable part of the Mexico City temple dedication was these words from President Hinckley" />
+<meta property="og:description" content="During the Mexico City Mexico Temple&#039;s dedication Dec. 2-3 1983, President Gordon B. Hinckley, then a counselor in the First Presidency, welcomed members in the temple district and &quot;a larger unseen congregation&quot; from the other side of the veil." />
+<meta property="og:url" content="https://www.thechurchnews.com/history-revisited/2018-06-22/the-most-memorable-part-of-the-mexico-city-temple-dedication-were-these-words-from-president-hinckley-10646" />
+<meta property="og:site_name" content="Church News" />
+<meta property="article:published_time" content="2018-06-22T15:00:00+00:00" />
+<meta property="og:image" content="https://www.thechurchnews.com/cdn-cgi/image/f=auto,onerror=redirect,fit=cover,g=top,w=1200,h=630/wp-content/uploads/2019/07/archive/e2beb74189/af-8-ec-98621.jpeg" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://www.thechurchnews.com/#website","url":"https://www.thechurchnews.com/","name":"Church News","description":"The Church News is an official publication of The Church of Jesus Christ of Latter-day Saints. Jointly published by the Deseret News and The Church of Jesus Christ of Latter-day Saints, its content supports the doctrines, principles and practices of the Church.","potentialAction":[{"@type":"SearchAction","target":"https://www.thechurchnews.com/?s={search_term_string}","query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"ImageObject","@id":"https://www.thechurchnews.com/history-revisited/2018-06-22/the-most-memorable-part-of-the-mexico-city-temple-dedication-were-these-words-from-president-hinckley-10646#primaryimage","inLanguage":"en-US","url":"https://www.thechurchnews.com/wp-content/uploads/2019/07/archive/e2beb74189/af-8-ec-98621.jpeg","width":1546,"height":1918,"caption":"President Gordon B. Hinckley and his wife, Sister Marjorie Pay Hinckley, in front of the Mexico City temple in 1983."},{"@type":"WebPage","@id":"https://www.thechurchnews.com/history-revisited/2018-06-22/the-most-memorable-part-of-the-mexico-city-temple-dedication-were-these-words-from-president-hinckley-10646#webpage","url":"https://www.thechurchnews.com/history-revisited/2018-06-22/the-most-memorable-part-of-the-mexico-city-temple-dedication-were-these-words-from-president-hinckley-10646","name":"The most memorable part of the Mexico City temple dedication was these words from President Hinckley - Church News","isPartOf":{"@id":"https://www.thechurchnews.com/#website"},"primaryImageOfPage":{"@id":"https://www.thechurchnews.com/history-revisited/2018-06-22/the-most-memorable-part-of-the-mexico-city-temple-dedication-were-these-words-from-president-hinckley-10646#primaryimage"},"datePublished":"2018-06-22T15:00:00+00:00","dateModified":"2018-06-22T15:00:00+00:00","author":{"@id":"https://www.thechurchnews.com/#/schema/person/dbe1fcef34b771fcc9586e03acfdf863"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://www.thechurchnews.com/history-revisited/2018-06-22/the-most-memorable-part-of-the-mexico-city-temple-dedication-were-these-words-from-president-hinckley-10646"]}]},{"@type":["Person"],"@id":"https://www.thechurchnews.com/#/schema/person/dbe1fcef34b771fcc9586e03acfdf863","name":"Gerry Avant","image":{"@type":"ImageObject","@id":"https://www.thechurchnews.com/#personlogo","inLanguage":"en-US","url":"https://www.thechurchnews.com/wp-content/uploads/authors/gerry-avant.jpeg","caption":"Gerry Avant"},"description":"Gerry Avant is editor of the LDS Church News. In addition to her editing duties, she has gone on assignments throughout the United States and to countries. She has won state and regional awards for photography. A native of Georgia, she received an associate's degree from Brewton Parker College and a bachelor's degree from BYU, where she did post-graduate studies. She taught high school English before she joined the Deseret News staff."}]}</script>
+
+<link rel='dns-prefetch' href='//www.thechurchnews.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Church News &raquo; Feed" href="https://www.thechurchnews.com/feed" />
+<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.thechurchnews.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.4.2"}};
+			/*! This file is auto-generated */
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='https://www.thechurchnews.com/wp-includes/css/dist/block-library/style.min.css?ver=5.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='crp-public-css' href='https://www.thechurchnews.com/wp-content/plugins/custom-related-posts/dist/public.css?ver=1.6.2' type='text/css' media='all' />
+<link rel='stylesheet' id='dashicons-css' href='https://www.thechurchnews.com/wp-includes/css/dashicons.min.css?ver=5.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='churchnews-app-css-css' href='https://www.thechurchnews.com/wp-content/themes/churchnews/build/app.f280558d.css?ver=5.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='churchnews-article-css-css' href='https://www.thechurchnews.com/wp-content/themes/churchnews/build/page/article/index.9f5f5525.css?ver=5.4.2' type='text/css' media='all' />
+<script type='text/javascript' src='https://www.thechurchnews.com/wp-content/plugins/churchnews/build/js/dynamicAds.2af8fd46.js?ver=5.4.2'></script>
+<script type='text/javascript' src='https://www.thechurchnews.com/wp-content/themes/churchnews/build/lib/bLazy.d19164d9.js?ver=5.4.2'></script>
+<script type='text/javascript' src='https://www.thechurchnews.com/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=7.4.4'></script>
+<script type='text/javascript'>
+( 'fetch' in window ) || document.write( '<script src="https://www.thechurchnews.com/wp-includes/js/dist/vendor/wp-polyfill-fetch.min.js?ver=3.0.0"></scr' + 'ipt>' );( document.contains ) || document.write( '<script src="https://www.thechurchnews.com/wp-includes/js/dist/vendor/wp-polyfill-node-contains.min.js?ver=3.42.0"></scr' + 'ipt>' );( window.DOMRect ) || document.write( '<script src="https://www.thechurchnews.com/wp-includes/js/dist/vendor/wp-polyfill-dom-rect.min.js?ver=3.42.0"></scr' + 'ipt>' );( window.URL && window.URL.prototype && window.URLSearchParams ) || document.write( '<script src="https://www.thechurchnews.com/wp-includes/js/dist/vendor/wp-polyfill-url.min.js?ver=3.6.4"></scr' + 'ipt>' );( window.FormData && window.FormData.prototype.keys ) || document.write( '<script src="https://www.thechurchnews.com/wp-includes/js/dist/vendor/wp-polyfill-formdata.min.js?ver=3.0.12"></scr' + 'ipt>' );( Element.prototype.matches && Element.prototype.closest ) || document.write( '<script src="https://www.thechurchnews.com/wp-includes/js/dist/vendor/wp-polyfill-element-closest.min.js?ver=2.0.2"></scr' + 'ipt>' );
+</script>
+<script type='text/javascript' src='https://www.thechurchnews.com/wp-includes/js/dist/i18n.min.js?ver=cced130522e86c87a37cd7b8397b882c'></script>
+<script type='text/javascript' src='https://www.thechurchnews.com/wp-content/themes/churchnews/build/runtime.bd8bf823.js?ver=5.4.2'></script>
+<script type='text/javascript'>
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "churchnews", { "locale_data": { "messages": { "": {} } } } );
+</script>
+<script type='text/javascript' src='https://www.thechurchnews.com/wp-content/themes/churchnews/build/jsapp.bea39e81.js?ver=5.4.2'></script>
+<script type='text/javascript' src='https://www.thechurchnews.com/wp-content/themes/churchnews/build/polyfill.61386175.js?ver=5.4.2'></script>
+<link rel='https://api.w.org/' href='https://www.thechurchnews.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.thechurchnews.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.thechurchnews.com/wp-includes/wlwmanifest.xml" />
+<meta name="generator" content="WordPress 5.4.2" />
+<link rel='shortlink' href='https://www.thechurchnews.com/?p=10646' />
+<link rel="alternate" type="application/json+oembed" href="https://www.thechurchnews.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.thechurchnews.com%2Fhistory-revisited%2F2018-06-22%2Fthe-most-memorable-part-of-the-mexico-city-temple-dedication-were-these-words-from-president-hinckley-10646" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.thechurchnews.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.thechurchnews.com%2Fhistory-revisited%2F2018-06-22%2Fthe-most-memorable-part-of-the-mexico-city-temple-dedication-were-these-words-from-president-hinckley-10646&#038;format=xml" />
+<link rel="icon" href="https://www.thechurchnews.com/wp-content/uploads/2019/08/favicon-150x150.png" sizes="32x32" />
+<link rel="icon" href="https://www.thechurchnews.com/wp-content/uploads/2019/08/favicon-300x300.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.thechurchnews.com/wp-content/uploads/2019/08/favicon-300x300.png" />
+<meta name="msapplication-TileImage" content="https://www.thechurchnews.com/wp-content/uploads/2019/08/favicon-300x300.png" />
+<script>
+		window._adConfig = {"path":"\/6686\/lds-church-news","targeting":{"section":"history-revisited","articleId":10646}};
+		window._adDynamic = {"id":"dynamic","path":"\/6686\/lds-church-news","defaultSize":[300,250],"sizes":{"[1001,0]":[[970,250],[728,90],[300,250]],"[751,0]":[[728,90],[300,250]],"[0,0]":[[300,250]]},"hiddenOn":[],"breakpoints":{"small":0,"medium":751,"large":1001},"targeting":{"pos":"dynamic","section":"history-revisited","articleId":10646,"language":"en"}};
+	</script>
+</head>
+<body class="page post-template-default single single-post postid-10646 single-format-standard" data-template="base.twig">
+
+<noscript>
+            <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T3LWQZ8" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+
+<div id="main_menu_modal_root"></div>
+<div id="main_menu_backdrop_root"></div>
+<div class="page__header">
+<div class="container global-header">
+<div class="row">
+<nav class="global-header__navigation col-12">
+<ul class="global-header__left-navigation">
+<li class="global-header__navigation-item">
+<a href="https://www.deseret.com" class="global-header__navigation-link">Deseret News</a>
+</li>
+<li class="global-header__navigation-item global-header__navigation-item--spacer"></li>
+<li class="global-header__navigation-item">
+<a href="/" class="global-header__navigation-link">Church News</a>
+</li>
+</ul>
+<ul class="global-header__right-navigation">
+<li class="global-header__navigation-item global-header__navigation-item--language-selector" ontouchstart>
+<span>English</span>
+<ul class="global-header__language-selector-dropdown" id="global-header__language-selector-dropdown">
+<li class="global-header__language-selector-item global-header__language-selector-item--title">Select a Langauge</li>
+<li class="global-header__language-selector-item">
+<a href="/">English</a>
+</li>
+<li class="global-header__language-selector-item">
+<a href="/es/">Español</a>
+</li>
+<li class="global-header__language-selector-item">
+<a href="/pt/">Português</a>
+</li>
+</ul>
+</li>
+<li class="global-header__navigation-item global-header__navigation-item--spacer"></li>
+<li class="global-header__navigation-item global-header__navigation-item--subscribe">
+<a href="https://subscribe.utahmediagroup.com/deseret_news" class="global-header__navigation-link">
+Subscribe
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div> </div>
+<div class="container page__container ">
+<div class="page__main-content row">
+<div id="react_wrapper_header_vertical" class="col-12">
+<header class="header-vertical">
+<a href="https://www.thechurchnews.com" class="header-vertical__logo"></a>
+<button class="btn header-vertical__menu-btn btn--mobile-icon-only">
+<span class="btn__label">Menu</span><i class="btn__icon icon-menu"></i></button> </header>
+</div>
+<script>
+    ReactDOM.render(
+        React.createElement(window.ldscn.site.HeaderVertical, {
+            topicalNavigation: {
+                items: [
+                                        {title: "Restoration", url: "https://www.thechurchnews.com/category/restoration" },                                        {title: "Women of Covenant", url: "https://www.thechurchnews.com/category/women-priesthood-covenant" },                                        {title: "Coronavirus", url: "https://www.thechurchnews.com/category/coronavirus" },                                        {title: "Apostles' Travels", url: "https://www.thechurchnews.com/category/apostle-travels" },                                        {title: "Videos", url: "https://www.thechurchnews.com/category/church-news-videos" }                                    ]
+            },
+            footerNavigation:{
+                items: [
+                                        {title: "About Us", url: "https://www.thechurchnews.com/about-us" },                                        {title: "Contact Us", url: "https://www.thechurchnews.com/contact-us" },                                        {title: "Terms of Service", url: "https://www.thechurchnews.com/terms-of-service" },                                        {title: "Privacy Policy", url: "https://www.thechurchnews.com/privacy-policy" },                                        {title: "Mission Reunions", url: "https://www.thechurchnews.com/mission-reunions" },                                        {title: "Free Email Newsletter", url: "https://www.thechurchnews.com/newsletters" }                                    ]
+            },
+            site: {"two_letter_language":"en","language_name":"English","admin_email":"development@deseretnews.com","blogname":"Church News","charset":"UTF-8","description":"The Church News is an official publication of The Church of Jesus Christ of Latter-day Saints. Jointly published by the Deseret News and The Church of Jesus Christ of Latter-day Saints, its content supports the doctrines, principles and practices of the Church.","id":"1","language":"en-US","multisite":true,"name":"Church News","pingback_url":"https:\/\/www.thechurchnews.com\/xmlrpc.php","siteurl":"https:\/\/www.thechurchnews.com","theme":{"name":"Church News","version":"","parent":false,"parent_slug":null,"slug":"churchnews","uri":"https:\/\/www.thechurchnews.com\/wp-content\/themes\/churchnews","id":null,"ID":null,"object_type":null},"title":"Church News","url":"https:\/\/www.thechurchnews.com","home_url":"https:\/\/www.thechurchnews.com","site_url":"https:\/\/www.thechurchnews.com","rdf":"https:\/\/www.thechurchnews.com\/feed\/rdf","rss":"https:\/\/www.thechurchnews.com\/feed\/rss","rss2":"https:\/\/www.thechurchnews.com\/feed","atom":"https:\/\/www.thechurchnews.com\/feed\/atom","ID":"1","object_type":null,"pingback":"https:\/\/www.thechurchnews.com\/xmlrpc.php","blog_id":"1","domain":"www.thechurchnews.com","path":"\/","site_id":"1","registered":"2019-08-15 15:51:50","last_updated":"2020-06-29 14:33:22","public":"1","archived":"0","mature":"0","spam":"0","deleted":"0","lang_id":"0","post_count":"47003","home":"https:\/\/www.thechurchnews.com"}
+        }),
+
+        document.getElementById('react_wrapper_header_vertical')
+    );
+</script>
+<div class="article-wrapper" data-id="10646" id="post-10646" data-category-name="history-revisited" data-publshed-year="2018" data-publshed-month="06" data-publshed-day="21">
+<article class="article col-12 article--default">
+<div class="row">
+<div class="col-12 col-md-8 col-lg-7 offset-md-1">
+<header class="article-header">
+<div>
+<a href="https://www.thechurchnews.com/category/history-revisited" class="article-header__section-label">
+<div>History Revisited</div>
+</a>
+</div>
+<h1 class="article-header__headline">The most memorable part of the Mexico City temple dedication was these words from President Hinckley</h1>
+<h2 class="article-header__deck"></h2>
+</header>
+<div class="featured-media">
+<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="     wp-block-image inline inline-image          inline-image--expandable    "> <a href="https://www.thechurchnews.com/wp-content/uploads/2019/07/archive/e2beb74189/af-8-ec-98621.jpeg" data-size="1546x1918"> <img class="b-lazy inline-image__img align" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://www.thechurchnews.com/wp-content/uploads/2019/07/archive/e2beb74189/af-8-ec-98621.jpeg" alt="President Gordon B. Hinckley and his wife, Sister Marjorie Hinckley, pause for a photo on Dec. 3, 1983, the second day of the dedication of the Mexico Mexico City Temple." width="1546" height="1546" /><noscript><img src="https://www.thechurchnews.com/wp-content/uploads/2019/07/archive/e2beb74189/af-8-ec-98621.jpeg" alt="President Gordon B. Hinckley and his wife, Sister Marjorie Hinckley, pause for a photo on Dec. 3, 1983, the second day of the dedication of the Mexico Mexico City Temple." /></noscript> </a> <figcaption itemprop="caption description" class="featured-media__info"> <span class="featured-media__caption">President Gordon B. Hinckley and his wife, Sister Marjorie Hinckley, pause for a photo on Dec. 3, 1983, the second day of the dedication of the Mexico Mexico City Temple.</span> <span class="featured-media__credit"> Credit: Gerry Avant, Church News</span> </figcaption> </figure>
+</div>
+</div>
+</div>
+<div class="article-main-column row">
+<aside class="article-share col-12 order-2 col-lg-10 offset-lg-2 order-lg-1">
+<a class="article-share__icon" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.thechurchnews.com%2Fhistory-revisited%2F2018-06-22%2Fthe-most-memorable-part-of-the-mexico-city-temple-dedication-were-these-words-from-president-hinckley-10646" target="_blank" rel="noopener nofollow">
+<span class="icon-facebook-btn icon--large">
+<span class="path1"></span><span class="path2"></span>
+</span>
+</a>
+<a class="article-share__icon" href="https://twitter.com/share?text=The%20most%20memorable%20part%20of%20the%20Mexico%20City%20temple%20dedication%20was%20these%20words%20from%20President%20Hinckley&url=https%3A%2F%2Fwww.thechurchnews.com%2Fhistory-revisited%2F2018-06-22%2Fthe-most-memorable-part-of-the-mexico-city-temple-dedication-were-these-words-from-president-hinckley-10646" target="_blank" rel="noopener nofollow">
+<span class="icon-twitter-btn icon--large">
+<span class="path1"></span><span class="path2"></span>
+</span>
+</a>
+</aside>
+<aside class="article-info col-12 order-1 col-lg-2 order-lg-2">
+<a class="article-info__authors" href="https://www.thechurchnews.com/author/gerrydeseretnews-com">
+<div class="article-info__author">
+<span class="article-info__author-name">By Gerry Avant</span>
+</div>
+</a>
+<div class="article-info__datetime">
+<span class="article-info__datetime-label">Updated</span>
+<div class="article-info__datetime-date">22 Jun 2018</div>
+<div class="article-info__datetime-time">9:00 am MDT</div>
+</div>
+</aside>
+<div class="article-body-wrapper col-12 col-lg-8 order-3">
+<div class="row">
+<div class="article-body col-12 col-md-10">
+<p>I&#39;m sure everyone has had an experience that becomes embedded in his or her memory. Maybe it came through some action or something that was said.</p><p>One of my memories comes from the dedication of the Mexico City Mexico Temple Dec. 2-3, 1983. President Gordon B. Hinckley, then second counselor in the First Presidency, conducted and addressed some of the sessions to dedicate the temple, which was the first in Mexico and the 26th worldwide.</p> <p>As he began his address in one of the sessions, President Hinckley spoke with a quivering voice as he testified that souls “from the other side of the veil” were present. “All rooms (of the temple) are filled with faithful Latter-day Saints,” he said, “but I am convinced there is a larger, unseen congregation participating with us.”</p> <p>President Hinckley then named specifically individuals who had key roles in establishing the Church in Mexico, beginning with Brigham Young, who sent missionaries to the country. He stated the names of several of the missionaries and the first mission president. He named the first Mexican who was baptized, and pronounced the names of several others who had occupied a place in the history of the Church in Mexico.</p> <p>President Hinckley then proceeded to give the talk he had prepared.</p> <p>I suppose most of us have been in congregations when the person conducting the meeting has acknowledged certain people, such as a member of the stake presidency or other visitor and, later, has said something to the effect, “There is another person I failed to introduce.” Something like that happened during the dedication of the temple in Mexico City.</p> <p>President Hinckley had been speaking several minutes. He paused and explained that there was another person from the other side of the veil he had not mentioned. In a strong voice filled with emotion and joy, President Hinckley exclaimed, “Welcome, Father Lehi! Oh, how your heart must rejoice!”</p> <p>I was seated on one of the front rows in the celestial room. I wanted to turn around and look in the direction where “a late comer” might have entered the room. The moment seemed so real that I felt, surely, I could see what Father Lehi looked like.</p> <p>I didn’t see that great Book of Mormon prophet, and I can’t affirm that President Hinckley saw him with physical eyes, but I’ve no doubt that the Spirit let President Hinckley know that Father Lehi, indeed, was present that day in that temple.</p> <p>President Hinckley spoke of other temples as a fulfillment of prophecy regarding Lehi’s descendants. “Six new temples have been dedicated this year,” he said. “These were unplanned in terms of particular prophecy but most of these temples have been built to serve descendants of Lehi. … I believe the Lord has touched His prophet (then President Spencer W. Kimball) to bring into play those processes by which He is remembering ancient covenants concerning descendants of Lehi.”</p> <p>In one session, President Hinckley said he had watched the choir director. “I’m confident from her appearance there is in her veins the blood of Father Lehi and Mother Sariah. I’ve seen shining in her eyes the light of the gospel of Jesus Christ and I see it in your eyes. What wonderful people you are — people of capacity, faith and devotion,” he told the congregation.</p> <p>I spent several hours that weekend on the grounds of the new temple. Hundreds of members stood in line before each of the eight sessions over two days waiting for their turn to enter the temple. They came from many parts of Mexico and Guatemala, and from many walks of life. The poor and the rich, the young and old — all stood together, anticipating what was to transpire.</p> <p>With few exceptions, mainly returned missionaries and former mission presidents and their families, I knew they were children of Lehi. All had come, with that ancient prophet, to a sacred place for a holy occasion. I was privileged to be there with them.</p>
+</div>
+</div>
+<div class="row">
+<div class="article-body col-12 col-md-10">
+<div id=react_wrapper_newsletter_signup_form_10646>
+<script>
+            (function(){
+                var renderNewsletterForm = function() {
+                    var form = React.createElement(window.ldscn.components.NewsletterSignupForm, {
+                        'apiUrl': "\/graphql",
+                        'newsletter': "churchnews-en",
+                        'description': "Get Church News highlights delivered to your inbox weekly. Type your email address below."
+                    });
+                    var card = React.createElement(window.ldscn.components.Card, null, form);
+                    ReactDOM.render(card, document.getElementById("react_wrapper_newsletter_signup_form_10646"));
+                };
+
+                if (document.readyState === 'loading') {
+                    document.addEventListener('DOMContentLoaded', function() {
+                        renderNewsletterForm();
+                    });
+                } else {
+                    renderNewsletterForm();
+                }
+            })();
+        </script>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+
+<div class="pswp__container">
+<div class="pswp__item"></div>
+<div class="pswp__item"></div>
+<div class="pswp__item"></div>
+</div>
+
+<div class="pswp__ui pswp__ui--hidden">
+<div class="pswp__top-bar">
+
+<div class="pswp__counter"></div>
+<button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+<button class="pswp__button pswp__button--share" title="Share"></button>
+<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+
+<div class="pswp__preloader">
+<div class="pswp__preloader__icn">
+<div class="pswp__preloader__cut">
+<div class="pswp__preloader__donut"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+<div class="pswp__share-tooltip"></div>
+</div>
+<button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+</button>
+<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+</button>
+<div class="pswp__caption">
+<div class="pswp__caption__center"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+
+<div class="pswp__container">
+<div class="pswp__item"></div>
+<div class="pswp__item"></div>
+<div class="pswp__item"></div>
+</div>
+
+<div class="pswp__ui pswp__ui--hidden">
+<div class="pswp__top-bar">
+
+<div class="pswp__counter"></div>
+<button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+<button class="pswp__button pswp__button--share" title="Share"></button>
+<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+
+<div class="pswp__preloader">
+<div class="pswp__preloader__icn">
+<div class="pswp__preloader__cut">
+<div class="pswp__preloader__donut"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+<div class="pswp__share-tooltip"></div>
+</div>
+<button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+</button>
+<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+ </button>
+<div class="pswp__caption">
+<div class="pswp__caption__center"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<footer class="container">
+<div class="row">
+<div class="footer-content col-12 col-md-9">
+<div class="row">
+<div class="footer-content__head col-12">
+<ul class="footer-content__links">
+<li class="footer-content__link  menu-item menu-item-type-post_type menu-item-object-page menu-item-155308">
+<a href="https://www.thechurchnews.com/about-us">About Us</a>
+</li>
+<li class="footer-content__link  menu-item menu-item-type-post_type menu-item-object-page menu-item-155309">
+<a href="https://www.thechurchnews.com/contact-us">Contact Us</a>
+</li>
+<li class="footer-content__link  menu-item menu-item-type-post_type menu-item-object-page menu-item-155310">
+<a href="https://www.thechurchnews.com/terms-of-service">Terms of Service</a>
+</li>
+<li class="footer-content__link  menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-155311">
+<a href="https://www.thechurchnews.com/privacy-policy">Privacy Policy</a>
+</li>
+<li class="footer-content__link  menu-item menu-item-type-post_type menu-item-object-page menu-item-160282">
+<a href="https://www.thechurchnews.com/mission-reunions">Mission Reunions</a>
+</li>
+<li class="footer-content__link  menu-item menu-item-type-post_type menu-item-object-page menu-item-172717">
+<a href="https://www.thechurchnews.com/newsletters">Free Email Newsletter</a>
+</li>
+</ul>
+<div class="footer-content__social">
+<div class="footer-content__social-label">Follow Us</div>
+<a href="https://www.facebook.com/TheChurchNews/" class="footer-content__social-link">
+<i class="icon-facebook"></i>
+</a>
+<a href="https://twitter.com/the_churchnews" class="footer-content__social-link">
+<i class="icon-twitter"></i>
+</a>
+</div>
+</div>
+<div class="footer-content__separator-wrapper col-12">
+<div class="footer-content__separator"></div>
+</div>
+</div>
+<div class="row">
+<div class="footer-content__logos col-12 col-md-5 col-lg-4">
+<a href="/" class="footer-content__cn-logo-wrapper">
+<span class="footer-content__cn-logo"></span>
+</a>
+<a href="https://www.deseret.com">
+<span class="footer-content__dn-logo"></span>
+</a>
+</div>
+<div class="footer-content__text col-12 col-md-7 col-lg-8">
+<div class="footer-content__desc d-none d-md-block">
+The Church News is an official publication of The Church of Jesus Christ of Latter-day Saints.&nbsp;Jointly published by the Deseret News and The Church of Jesus Christ of Latter-day Saints, its content supports the doctrines, principles and practices of the Church.
+</div>
+<div class="footer-content__copyright">
+ Copyright © 2020 Deseret News Publishing Company. All rights reserved.
+</div>
+</div>
+</div>
+</div>
+<div class="footer-symbol col-12 col-md-3">
+<a href="https://www.churchofjesuschrist.org/" class="footer-symbol__christus-wrapper">
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 120.94 239.04">
+<defs>
+<style>.cls-1{fill:#fff;}</style>
+</defs>
+<rect class="cls-1" x="1.37" y="179.12" width="118.21" height="58.56" />
+<path d="M60.47,0A60.47,60.47,0,0,0,0,60.47V239H120.94V60.47A60.47,60.47,0,0,0,60.47,0M18.68,18.68a59.1,59.1,0,0,1,83.58,0,58.68,58.68,0,0,1,17.32,41.79V177.75H1.37V60.47A58.67,58.67,0,0,1,18.68,18.68M1.37,179.12H119.58v58.55H1.37Z" />
+<path d="M19.86,193.71a.27.27,0,0,1-.11,0c-.08,0-.17,0-.17,0a1.21,1.21,0,0,0-.21-.77c-.22-.23-.56-.38-1.85-.38l-.52,0a7.53,7.53,0,0,0-.06,1.31v2.79c0,2.1.11,2.36.26,2.42a2.62,2.62,0,0,0,.92.2s0,.08,0,.15,0,.13,0,.13H14.73s0-.07,0-.13a.25.25,0,0,1,0-.15,2.62,2.62,0,0,0,.92-.2c.15-.06.24-.32.24-2.42v-2.79a7,7,0,0,0-.05-1.31l-.57,0c-1.23,0-1.57.12-1.85.38a1.7,1.7,0,0,0-.37.8s0,0-.06,0a.37.37,0,0,1-.22-.07L13,192a.06.06,0,0,1,.06-.05,25.67,25.67,0,0,0,3.41.13c2.84,0,3.27-.06,3.48-.15.05,0,.07,0,.07.05a12.85,12.85,0,0,1-.11,1.74" />
+<path d="M26.09,199.55s-.05-.07-.05-.13a.19.19,0,0,1,.05-.15,1.89,1.89,0,0,0,.81-.2c.15-.06.26-.32.26-2.42V196H22.84v.69c0,2.1.11,2.36.26,2.42a1.9,1.9,0,0,0,.82.2.27.27,0,0,1,0,.17.54.54,0,0,1,0,.11H20.72s0-.07,0-.13,0-.13,0-.15a2,2,0,0,0,.82-.2c.15-.06.23-.32.23-2.42V195c0-2.1-.08-2.36-.23-2.42a2.27,2.27,0,0,0-.82-.22s0-.06,0-.13,0-.13,0-.13h3.22a.3.3,0,0,1,0,.09c0,.06,0,.17,0,.17a2.14,2.14,0,0,0-.82.22c-.15.06-.26.32-.26,2.42v.52h4.32V195c0-2.1-.11-2.36-.26-2.42a2.13,2.13,0,0,0-.81-.22s-.05-.06-.05-.13,0-.13.05-.13h3.19s0,.05,0,.11,0,.15,0,.15a2.26,2.26,0,0,0-.81.22c-.13.06-.24.32-.24,2.42v1.68c0,2.1.11,2.36.24,2.42a2,2,0,0,0,.81.2s0,.1,0,.17,0,.11,0,.11Z" />
+<path d="M35.23,199.37a.43.43,0,0,1-.45.22c-.73,0-1.59,0-2.58,0-.77,0-1.24,0-2.08,0,0,0,0-.07,0-.13a.25.25,0,0,1,0-.15,1.85,1.85,0,0,0,.82-.2c.15-.06.25-.34.25-2.44V195c0-2.1-.1-2.38-.25-2.45a2.14,2.14,0,0,0-.82-.21s0-.06,0-.13,0-.13,0-.13c.92,0,2.38,0,3.16,0,1,0,1.54,0,1.93,0,0,0,0,0,0,0,0,.39-.06,1-.13,1.55,0,0-.06,0-.12,0s-.18,0-.18-.06a1.14,1.14,0,0,0-.23-.77c-.2-.2-.54-.31-1.38-.31-.47,0-.79,0-.92,0a7.53,7.53,0,0,0,0,1.24v1.63h.88c1.13,0,1.28-.25,1.35-.66,0,0,.09,0,.15,0s.15,0,.15,0c0,.32-.06,1.69-.06,2,0,0-.09.05-.15.05s-.16,0-.16-.05a.93.93,0,0,0-.17-.62c-.1-.08-.28-.21-1.13-.21h-.86v.73a5,5,0,0,0,.25,2.23c.15.13.3.21,1,.21a1.82,1.82,0,0,0,1.36-.4,1.5,1.5,0,0,0,.38-.8s0,0,.07,0,.17,0,.15.06a6.07,6.07,0,0,1-.24,1.44" />
+<path d="M46.57,199.12a3.64,3.64,0,0,1-2.37.53A4,4,0,0,1,40,195.9,4,4,0,0,1,44.18,192a15.49,15.49,0,0,1,2.49.34s0,0,0,0c0,.41,0,1,0,1.66,0,0,0,0-.11,0s-.19,0-.19-.06a1.66,1.66,0,0,0-.45-.93,2.86,2.86,0,0,0-2-.66c-2.14,0-2.92,1.52-2.92,3.17a3.34,3.34,0,0,0,3.1,3.61,2.23,2.23,0,0,0,1.86-.62,3.18,3.18,0,0,0,.5-1s0,0,.06,0,.22,0,.22.06a5.74,5.74,0,0,1-.3,1.53" />
+<path d="M53.33,199.55s0-.07,0-.13a.25.25,0,0,1,0-.15,1.89,1.89,0,0,0,.81-.2c.15-.06.26-.32.26-2.42V196H50.09v.69c0,2.1.1,2.36.25,2.42a2,2,0,0,0,.82.2.27.27,0,0,1,0,.17.54.54,0,0,1,0,.11H48s0-.07,0-.13,0-.13,0-.15a2,2,0,0,0,.82-.2c.15-.06.23-.32.23-2.42V195c0-2.1-.08-2.36-.23-2.42a2.2,2.2,0,0,0-.82-.22s0-.06,0-.13,0-.13,0-.13h3.22a.3.3,0,0,1,0,.09c0,.06,0,.17,0,.17a2.2,2.2,0,0,0-.82.22c-.15.06-.25.32-.25,2.42v.52H54.4V195c0-2.1-.11-2.36-.26-2.42a2.13,2.13,0,0,0-.81-.22s0-.06,0-.13,0-.13,0-.13h3.2s0,.05,0,.11,0,.15,0,.15a2.26,2.26,0,0,0-.81.22c-.13.06-.24.32-.24,2.42v1.68c0,2.1.11,2.36.24,2.42a2,2,0,0,0,.81.2s0,.1,0,.17,0,.11,0,.11Z" />
+<path d="M64.71,192.57c-.11.08-.22.3-.22,2.4v1.93a3.1,3.1,0,0,1-6.16,0v-2c0-2.1-.11-2.36-.26-2.42a2.13,2.13,0,0,0-.81-.22s0-.06,0-.13,0-.13,0-.13h3.26a.56.56,0,0,1,0,.13c0,.07,0,.13,0,.13a2.66,2.66,0,0,0-.86.22c-.15.06-.26.32-.26,2.42v1.66A2.19,2.19,0,0,0,61.74,199a2,2,0,0,0,2.15-2.24V195c0-2.1-.11-2.32-.22-2.4a2,2,0,0,0-.88-.24s0-.06,0-.11,0-.15,0-.15h2.73s0,.09,0,.15,0,.11,0,.11a1.65,1.65,0,0,0-.81.24" />
+<path d="M73.49,199.57a3.28,3.28,0,0,1-1.79-.41,8.87,8.87,0,0,1-2.21-2.77h-.43c-.28,0-.47,0-.79,0v.25c0,2.11.11,2.39.26,2.45a3.15,3.15,0,0,0,1,.2.27.27,0,0,1,0,.17.41.41,0,0,1,0,.1H66.14s0,0,0-.1,0-.15,0-.17a2,2,0,0,0,.82-.2c.13-.06.24-.34.24-2.45V195c0-2.1-.11-2.36-.24-2.43a2.33,2.33,0,0,0-.82-.21s0-.09,0-.15,0-.11,0-.11l1.61,0,1.44,0c1.78,0,2.79.95,2.79,1.89a2.66,2.66,0,0,1-1.52,2.17c1.59,2.3,2.45,3.13,3.37,3.13h.34s.07.22.07.26a4.65,4.65,0,0,1-.75.07m-4.32-7.09c-.41,0-.66.07-.71.15a7.33,7.33,0,0,0-.19,2.32c0,.69,0,.77.11.84s.36.19.92.19a1.55,1.55,0,0,0,1.48-1.65c0-1-.47-1.85-1.61-1.85" />
+<path d="M80.38,199.12a3.64,3.64,0,0,1-2.37.53,4,4,0,0,1-4.25-3.75A4,4,0,0,1,78,192a15.49,15.49,0,0,1,2.49.34,0,0,0,0,1,0,0c0,.41,0,1,0,1.66,0,0,0,0-.11,0s-.19,0-.19-.06a1.6,1.6,0,0,0-.45-.93,2.86,2.86,0,0,0-2-.66c-2.14,0-2.91,1.52-2.91,3.17,0,1.87,1.2,3.61,3.09,3.61a2.23,2.23,0,0,0,1.86-.62,3.18,3.18,0,0,0,.5-1s0,0,.06,0,.22,0,.22.06a5.74,5.74,0,0,1-.3,1.53" />
+<path d="M87.05,199.55s0-.07,0-.13a.25.25,0,0,1,0-.15,1.9,1.9,0,0,0,.82-.2c.15-.06.26-.32.26-2.42V196H83.81v.69c0,2.1.11,2.36.26,2.42a1.9,1.9,0,0,0,.82.2.27.27,0,0,1,0,.17.54.54,0,0,1,0,.11H81.69s0-.07,0-.13,0-.13,0-.15a1.89,1.89,0,0,0,.81-.2c.15-.06.24-.32.24-2.42V195c0-2.1-.09-2.36-.24-2.42a2.13,2.13,0,0,0-.81-.22s0-.06,0-.13,0-.13,0-.13h3.22a.3.3,0,0,1,0,.09c0,.06,0,.17,0,.17a2.14,2.14,0,0,0-.82.22c-.15.06-.26.32-.26,2.42v.52h4.32V195c0-2.1-.11-2.36-.26-2.42a2.14,2.14,0,0,0-.82-.22s0-.06,0-.13,0-.13,0-.13h3.2s0,.05,0,.11,0,.15,0,.15a2.34,2.34,0,0,0-.82.22c-.12.06-.23.32-.23,2.42v1.68c0,2.1.11,2.36.23,2.42a2,2,0,0,0,.82.2s0,.1,0,.17,0,.11,0,.11Z" />
+<path d="M97.9,199.65a3.82,3.82,0,0,1-4-3.76A4.06,4.06,0,0,1,98,192a3.81,3.81,0,0,1,4,3.75,4.06,4.06,0,0,1-4.12,3.93m-.09-7.21c-2.11,0-2.71,1.72-2.71,3.13,0,1.87,1.12,3.61,3,3.61,2.1,0,2.71-1.72,2.71-3.13,0-1.87-1.12-3.61-3-3.61" />
+<path d="M108,193.6s0,0-.11,0-.19,0-.19-.06a1,1,0,0,0-.23-.71,2,2,0,0,0-1.46-.39,9.73,9.73,0,0,0-1,0,11,11,0,0,0,0,1.29v1.72h.84c1.14,0,1.29-.13,1.35-.54,0,0,.07,0,.13,0s.17,0,.17,0c0,.32-.06,1.48-.06,1.81a.27.27,0,0,1-.11,0c-.08,0-.19,0-.19-.05a.73.73,0,0,0-.17-.55c-.11-.11-.28-.18-1.14-.18h-.82v.63c0,2.1.11,2.36.26,2.42a3.22,3.22,0,0,0,1,.2.27.27,0,0,1,0,.17.54.54,0,0,1,0,.11h-3.43s0-.05,0-.11,0-.15,0-.17a2,2,0,0,0,.81-.2c.13-.06.24-.32.24-2.42V195c0-2.1-.11-2.4-.24-2.47a2,2,0,0,0-.81-.19s0-.09,0-.15,0-.11,0-.11c.92,0,2.44,0,3.2,0,1,0,1.69,0,2.08,0a0,0,0,0,1,0,0c0,.39-.06.91-.13,1.53" />
+<path d="M17.52,204.52a.32.32,0,0,1,0,.16c0,.08,0,.17-.05.17a3.66,3.66,0,0,0-1.17.21c-.2.11-.32.52-.32,3.32v4.12c0,2.69-.52,3.9-3.2,5.15l0,0c-.07,0-.13-.1-.13-.17a.06.06,0,0,1,0-.05c1.35-1,2.06-1.64,2.06-4.9v-4.17c0-2.8-.14-3.21-.32-3.32a3.82,3.82,0,0,0-1.19-.21s0-.11,0-.19,0-.14,0-.14Z" />
+<path d="M24.78,206.65s-.06,0-.12,0-.21,0-.21-.08a1.54,1.54,0,0,0-.36-1c-.3-.33-.69-.46-1.56-.46-.6,0-1.17,0-1.31,0a10.66,10.66,0,0,0-.06,1.69V209h1.26c1.46,0,1.51-.42,1.6-1,0,0,.07-.05.15-.05s.19,0,.19.05l-.1,2.77a.27.27,0,0,1-.15,0c-.09,0-.18,0-.18-.05a1.93,1.93,0,0,0-.22-.95c-.14-.14-.22-.23-1.31-.23H21.16v1c0,2,.09,2.89.23,3s.61.2,1.52.2a1.87,1.87,0,0,0,1.58-.52,3,3,0,0,0,.51-1.23s.05,0,.09,0,.25.05.25.09c-.08,1-.25,2.09-.26,2.12a2.19,2.19,0,0,1-1.19.22c-.92,0-1.4-.05-2.67-.05-1,0-1.74,0-2.83,0a.21.21,0,0,1,0-.13.4.4,0,0,1,.05-.22,3.55,3.55,0,0,0,1.13-.21c.19-.11.33-.53.33-3.32v-2.25c0-2.79-.14-3.24-.33-3.35a3.28,3.28,0,0,0-1.13-.21.29.29,0,0,1-.05-.19.25.25,0,0,1,0-.14c.69,0,1.65,0,2.52,0H22.6a18.41,18.41,0,0,0,2.26-.07c.08,0,.09,0,.09.06,0,.54-.07,1.31-.17,2.14" />
+<path d="M29.32,214.7a3.91,3.91,0,0,1-2.46-.77,16.08,16.08,0,0,1-.11-1.87,4.44,4.44,0,0,1,0-.54c0-.05.09-.06.18-.06s.17,0,.17.06a4.06,4.06,0,0,0,.54,1.69,2.24,2.24,0,0,0,2,1,1.6,1.6,0,0,0,1.65-1.82c0-2.43-4.05-2.55-4.05-5.35a2.73,2.73,0,0,1,2.8-2.7,12.5,12.5,0,0,1,1.81.29h.22s.06,0,.06,0c0,.36,0,.88,0,1.43,0,.28,0,.57,0,.85a.22.22,0,0,1-.14,0c-.09,0-.2,0-.21-.06a2.61,2.61,0,0,0-.48-1.49,1.8,1.8,0,0,0-1.43-.6,1.54,1.54,0,0,0-1.46,1.67c0,2.08,4.11,2.58,4.11,5.24a3.07,3.07,0,0,1-3.2,3" />
+<path d="M44,204.71c0,.06,0,.14-.05.14-.6.06-.91.1-1.08.26s-.26.47-.26,3.27V211a3.7,3.7,0,0,1-4,3.62A3.56,3.56,0,0,1,34.74,211v-2.61c0-2.8-.13-3.21-.32-3.32a2.88,2.88,0,0,0-1.06-.21s0-.11,0-.19a.3.3,0,0,1,0-.14h4.15s0,.07,0,.14a.29.29,0,0,1-.05.19,3.32,3.32,0,0,0-1.12.21c-.19.11-.33.52-.33,3.32v2.34a2.92,2.92,0,0,0,3.1,3.09A2.75,2.75,0,0,0,42,210.89v-2.51c0-2.8-.15-3.16-.27-3.27s-.53-.2-1.14-.26c0,0,0-.08,0-.16s0-.17,0-.17H44s.05.1.05.19" />
+<path d="M47.21,214.7a3.91,3.91,0,0,1-2.46-.77,16.08,16.08,0,0,1-.11-1.87,4.44,4.44,0,0,1,0-.54c0-.05.09-.06.18-.06s.17,0,.17.06a4.06,4.06,0,0,0,.54,1.69,2.24,2.24,0,0,0,2,1,1.6,1.6,0,0,0,1.65-1.82c0-2.43-4-2.55-4-5.35a2.73,2.73,0,0,1,2.8-2.7,12.5,12.5,0,0,1,1.81.29H50s.06,0,.06,0c0,.36,0,.88,0,1.43,0,.28,0,.57,0,.85a.22.22,0,0,1-.14,0c-.09,0-.2,0-.21-.06a2.61,2.61,0,0,0-.48-1.49,1.8,1.8,0,0,0-1.43-.6,1.54,1.54,0,0,0-1.46,1.67c0,2.08,4.1,2.58,4.1,5.24a3.06,3.06,0,0,1-3.19,3" />
+<path d="M63.67,207.35c-.09,0-.19,0-.2-.07a2.59,2.59,0,0,0-.63-1.56,3.66,3.66,0,0,0-2.46-.87c-2.67,0-3.72,2.15-3.72,4.33,0,2.51,1.58,4.92,3.94,4.92a2.8,2.8,0,0,0,2.39-1,3.7,3.7,0,0,0,.65-1.32s0-.05.09-.05.25.05.25.1a18.7,18.7,0,0,1-.36,2.12,5.25,5.25,0,0,1-3.06.72,5,5,0,0,1-5.34-5.07,5.19,5.19,0,0,1,5.31-5.32,18,18,0,0,1,3,.48l.16,0c.06,0,.1,0,.1.06l0,2.48s-.08,0-.15,0" />
+<path d="M76.29,204.66a.29.29,0,0,1-.05.19,3.12,3.12,0,0,0-1.06.21c-.18.11-.32.51-.32,3.32v2.23c0,2.81.14,3.24.32,3.34a3.12,3.12,0,0,0,1.06.21s.05.09.05.18a.22.22,0,0,1,0,.14H72.18a.22.22,0,0,1,0-.14c0-.09,0-.18,0-.18a3.12,3.12,0,0,0,1.06-.21c.18-.1.32-.53.32-3.34v-.94H67.93v.94c0,2.81.13,3.23.33,3.34a3.24,3.24,0,0,0,1,.21s0,.09,0,.18,0,.14,0,.14H65.25a.22.22,0,0,1,0-.14c0-.09,0-.18,0-.18a3.32,3.32,0,0,0,1.06-.21c.18-.11.32-.53.32-3.34v-2.23c0-2.81-.14-3.21-.32-3.32a3.05,3.05,0,0,0-1.06-.21.29.29,0,0,1,0-.19.25.25,0,0,1,0-.14h4.07s0,.07,0,.14,0,.17,0,.19a3,3,0,0,0-1,.21c-.2.11-.33.51-.33,3.32v.72h5.65v-.72c0-2.81-.14-3.21-.32-3.32a3.12,3.12,0,0,0-1.06-.21.29.29,0,0,1,0-.19.25.25,0,0,1,0-.14h4.08a.25.25,0,0,1,0,.14" />
+<path d="M94.84,214.7a3.91,3.91,0,0,1-2.46-.77,16.08,16.08,0,0,1-.11-1.87,4.44,4.44,0,0,1,0-.54c0-.05.09-.06.18-.06s.17,0,.17.06a4.06,4.06,0,0,0,.54,1.69,2.24,2.24,0,0,0,2,1,1.59,1.59,0,0,0,1.64-1.82c0-2.43-4-2.55-4-5.35a2.73,2.73,0,0,1,2.8-2.7,12.5,12.5,0,0,1,1.81.29h.22s.06,0,.06,0c0,.36,0,.88,0,1.43,0,.28,0,.57,0,.85a.22.22,0,0,1-.14,0c-.09,0-.2,0-.21-.06a2.61,2.61,0,0,0-.48-1.49,1.8,1.8,0,0,0-1.43-.6,1.54,1.54,0,0,0-1.46,1.67c0,2.08,4.1,2.58,4.1,5.24a3.06,3.06,0,0,1-3.19,3" />
+<path d="M107.65,207s-.07.06-.15.06-.18,0-.18-.09a2.52,2.52,0,0,0-.31-1.4c-.31-.32-.94-.58-2.29-.58a5.88,5.88,0,0,0-.69,0,13.68,13.68,0,0,0-.06,1.86v3.79c0,2.79.13,3.21.32,3.32a3.92,3.92,0,0,0,1.18.21.29.29,0,0,1,0,.19.21.21,0,0,1,0,.13h-4.34s0-.06,0-.12,0-.18.06-.2a3.9,3.9,0,0,0,1.17-.21c.2-.11.32-.53.32-3.32v-3.79a13.68,13.68,0,0,0-.06-1.86,7.45,7.45,0,0,0-.77,0c-1.44,0-1.93.15-2.29.58a3.39,3.39,0,0,0-.5,1.43c0,.05-.06.06-.13.06s-.21,0-.21-.09c.09-.8.18-2,.23-2.49,0,0,0-.06.12-.06h.06a32.36,32.36,0,0,0,4.2.13c3.67,0,4-.07,4.29-.17h.06a.11.11,0,0,1,.11.08,24.68,24.68,0,0,1-.13,2.55" />
+<path d="M16.21,224.51A2.58,2.58,0,0,1,13.49,222a2.71,2.71,0,0,1,2.82-2.59A2.56,2.56,0,0,1,19,221.88a2.74,2.74,0,0,1-2.82,2.63m-.06-4.73c-1.26,0-1.63,1.1-1.63,2,0,1.18.67,2.35,1.85,2.35S18,223,18,222.08a2.08,2.08,0,0,0-1.85-2.3" />
+<path d="M21.4,222.57c0,1.4.08,1.46.18,1.5a1.85,1.85,0,0,0,.64.13.24.24,0,0,1,0,.11,1.23,1.23,0,0,1,0,.13H19.82s0-.1,0-.14,0-.08,0-.1a1.18,1.18,0,0,0,.53-.13c.1,0,.16-.16.16-1.56V221.4c0-1.41-.06-1.52-.16-1.56a1.67,1.67,0,0,0-.6-.16s0-.06,0-.1,0-.16,0-.16h.18c.53,0,1.06.05,1.59.05s1.39-.05,1.86-.05c.06,0,.13,0,.15.06,0,.26-.05.73-.09,1.13l-.16,0c-.05,0-.11,0-.11,0a.87.87,0,0,0-.16-.54c-.13-.13-.36-.23-.92-.23l-.67,0a9.74,9.74,0,0,0,0,1.1v.8h.46c.76,0,.86-.09.9-.36H23c0,.22,0,1.07,0,1.28l-.13,0c-.06,0-.1,0-.1,0a.57.57,0,0,0-.11-.39c-.08-.06-.09-.14-.66-.14H21.4Z" />
+<path d="M29.13,219.58s0,.11,0,.11a1.49,1.49,0,0,0-.54.15c-.1,0-.18.15-.18,1.56v1.38c0,1.09,0,1.31.72,1.31a1.45,1.45,0,0,0,1-.28,2,2,0,0,0,.34-.77h.14c.06,0,.15,0,.15,0a7.43,7.43,0,0,1-.23,1.26.37.37,0,0,1-.35.16c-.38,0-1.17-.05-1.73-.05s-1.26,0-1.74.05c0,0,0-.09,0-.13s0-.13,0-.14a1.52,1.52,0,0,0,.6-.15c.1,0,.16-.16.16-1.56V221.4c0-1.41-.06-1.52-.16-1.56a2,2,0,0,0-.6-.15s0,0,0-.08,0-.15,0-.15h2.39s0,.09,0,.12" />
+<path d="M31.52,224a2.28,2.28,0,0,0,.54-.95l1.45-3.71s.17,0,.25,0,.29,0,.29,0l1.5,3.8a2.42,2.42,0,0,0,.5.86.93.93,0,0,0,.48.16s0,.06,0,.1a.37.37,0,0,1,0,.14H34.38a.49.49,0,0,1,0-.14s0-.1,0-.1c.3,0,.5-.1.5-.21a4.2,4.2,0,0,0-.37-1.12H32.73l-.08.23a3.27,3.27,0,0,0-.27.84c0,.15.24.22.58.26,0,0,0,.07,0,.1s0,.14,0,.14H31a.49.49,0,0,1,0-.14s0-.1,0-.1a1,1,0,0,0,.52-.16m1.34-1.56h1.49l-.77-1.93Z" />
+<path d="M39.44,224.07a1.43,1.43,0,0,0,.58.13.24.24,0,0,1,0,.11,1.23,1.23,0,0,1,0,.13H37.64a.49.49,0,0,1,0-.14s0-.08,0-.1a1.42,1.42,0,0,0,.57-.13c.1,0,.16-.16.16-1.56v-1.69a6.89,6.89,0,0,0,0-1l-.39,0c-.81,0-1,.12-1.16.29a1.33,1.33,0,0,0-.24.61s0,0,0,0a.88.88,0,0,1-.23,0l.11-1.29a.07.07,0,0,1,.06-.06,17.44,17.44,0,0,0,2.37.12,9.29,9.29,0,0,0,2.39-.13.08.08,0,0,1,.06,0,10.89,10.89,0,0,1-.07,1.33l-.16,0c-.06,0-.11,0-.11,0a1.09,1.09,0,0,0-.15-.6c-.14-.16-.28-.29-1.14-.29l-.34,0a5.8,5.8,0,0,0,0,1v1.69c0,1.4.07,1.52.17,1.56" />
+<path d="M45,224.07a1.42,1.42,0,0,0,.57.13.16.16,0,0,1,0,.11s0,.13,0,.13H43.18s0-.1,0-.14,0-.08,0-.1a1.43,1.43,0,0,0,.58-.13c.1,0,.15-.16.15-1.56v-1.69c0-.48,0-.9,0-1l-.39,0c-.82,0-1,.12-1.16.29a1.33,1.33,0,0,0-.24.61s0,0,0,0a1,1,0,0,1-.23,0l.12-1.29a.07.07,0,0,1,.06-.06,17.44,17.44,0,0,0,2.37.12,9.29,9.29,0,0,0,2.39-.13.08.08,0,0,1,.06,0c0,.3,0,.92-.07,1.33l-.16,0c-.06,0-.12,0-.12,0a1.09,1.09,0,0,0-.14-.6c-.14-.16-.29-.29-1.14-.29-.18,0-.27,0-.35,0a6.3,6.3,0,0,0,0,1v1.69c0,1.4.07,1.52.17,1.56" />
+<path d="M49.16,220.9v.74h.56c.76,0,.86-.2.9-.47,0,0,.06,0,.1,0s.13,0,.13,0c0,.21-.05,1.21-.05,1.41,0,0-.08,0-.12,0s-.1,0-.1,0a.59.59,0,0,0-.12-.41c-.07-.06-.18-.14-.76-.14h-.54v.82c0,.68.07,1,.17,1.09s.2.15.67.15a1.15,1.15,0,0,0,.9-.28,1.19,1.19,0,0,0,.26-.61h.12s.11,0,.1,0a5.57,5.57,0,0,1-.16,1.1.29.29,0,0,1-.3.16c-.49,0-1-.05-2.05-.05l-1.37,0s0-.1,0-.14,0-.1,0-.11a1.47,1.47,0,0,0,.6-.15c.1,0,.16-.16.16-1.56V221.4c0-1.41-.06-1.52-.16-1.56a1.6,1.6,0,0,0-.6-.16s0-.06,0-.1a.5.5,0,0,1,0-.16h.19c.53,0,1.06,0,1.59,0s1.26,0,1.73,0c.06,0,.13,0,.14.06,0,.26,0,.68-.08,1.09a.57.57,0,0,1-.16,0c-.06,0-.12,0-.12,0a.86.86,0,0,0-.15-.54c-.13-.13-.36-.19-.92-.19-.31,0-.46,0-.54,0a8.93,8.93,0,0,0,0,1.06" />
+<path d="M53,221.18c0-1.19-.08-1.31-.18-1.36a1.56,1.56,0,0,0-.54-.14s0,0,0-.09a.58.58,0,0,1,0-.15h.1l1.1,0c.75,0,.93,0,1.3,0,1.12,0,1.75.66,1.75,1.29a1.64,1.64,0,0,1-1,1.44c1.06,1.54,1.59,2,2.21,2h.23a1.36,1.36,0,0,1,.08.28c-.17,0-.46,0-.64,0a2.44,2.44,0,0,1-1.27-.27,5.56,5.56,0,0,1-1.48-1.82H54.3a3.62,3.62,0,0,1-.45,0v.41c0,1.16.07,1.27.17,1.31a1.43,1.43,0,0,0,.58.13.29.29,0,0,1,0,.12s0,.12,0,.12H52.22a.49.49,0,0,1,0-.14s0-.08,0-.1a1.42,1.42,0,0,0,.57-.13c.1,0,.15-.15.15-1.3Zm1.49-1.39c-.27,0-.44.05-.47.1a3.5,3.5,0,0,0-.13,1.42c0,.46,0,.52.07.56a1,1,0,0,0,.62.13c.59,0,.9-.45.9-1.15s-.23-1.06-1-1.06" />
+<path d="M60.35,221.52c.07,0,.08,0,.08.09a.33.33,0,0,1-.07.17l-.17.33a.33.33,0,0,1-.34.19c-.6,0-1.05-.06-1.59-.06-.36,0-.35.11-.46.11s-.09,0-.09-.08a.68.68,0,0,1,.12-.24l.14-.26c.09-.13.13-.19.32-.19.41,0,1.08.06,1.54.06s.4-.12.52-.12" />
+<path d="M62.08,221.18c0-1.19-.09-1.32-.19-1.36a1.56,1.56,0,0,0-.54-.14s0,0,0-.09a.58.58,0,0,1,0-.15h.1l1.11,0c.6,0,1.24,0,1.56,0a2.46,2.46,0,0,1,2,4.25,2.9,2.9,0,0,1-2.2.82c-.29,0-.73-.05-1-.05l-1.49,0a.49.49,0,0,1,0-.14s0-.09,0-.1a1.33,1.33,0,0,0,.57-.15c.1,0,.16-.16.16-1.56ZM63,221v1.69c0,.79.07,1.1.17,1.2s.3.19.71.19a1.79,1.79,0,0,0,2-2.06,2,2,0,0,0-1.93-2.22c-.6,0-.77.08-.83.16a2.37,2.37,0,0,0-.11,1" />
+<path d="M67.5,224a2.28,2.28,0,0,0,.54-.95l1.45-3.71s.17,0,.26,0,.28,0,.28,0l1.51,3.8a2.28,2.28,0,0,0,.5.86.86.86,0,0,0,.47.16s0,.06,0,.1a.37.37,0,0,1,0,.14H70.36a.49.49,0,0,1,0-.14s0-.1,0-.1c.3,0,.5-.1.5-.21a4.2,4.2,0,0,0-.37-1.12H68.72l-.09.23a3.27,3.27,0,0,0-.27.84c0,.15.24.22.59.26,0,0,0,.07,0,.1a.49.49,0,0,1,0,.14H67s0-.1,0-.14,0-.1,0-.1a1,1,0,0,0,.51-.16m1.35-1.56h1.48l-.77-1.93Z" />
+<path d="M74.17,222.54v-.17c-.19-.32-.45-.74-.62-1l-.44-.68c-.5-.77-.63-.85-.77-.91a2.16,2.16,0,0,0-.49-.09.27.27,0,0,1,0-.13s0-.1,0-.1H74s0,0,0,.1a.27.27,0,0,1,0,.13c-.17,0-.34,0-.34.1s.07.2.45.83l.72,1.16.74-1.14c.3-.47.39-.66.39-.78a.09.09,0,0,0,0-.08.86.86,0,0,0-.36-.09s0,0,0-.08,0-.15,0-.15h1.63s0,.09,0,.13,0,.1,0,.1a1.41,1.41,0,0,0-.42.09c-.2.1-.34.27-.75.91l-.93,1.45v.37c0,1.4.07,1.52.17,1.56a1.42,1.42,0,0,0,.57.13.25.25,0,0,1,0,.12s0,.12,0,.12H73.4s0-.1,0-.14,0-.08,0-.1a1.62,1.62,0,0,0,.6-.13c.1,0,.16-.13.16-1.53" />
+<path d="M80.85,224.52a2.17,2.17,0,0,1-1.39-.46,2.88,2.88,0,0,1,0-.55c0-.18,0-.54,0-.73a.24.24,0,0,1,.13,0l.12,0a2.19,2.19,0,0,0,.26.83,1.13,1.13,0,0,0,1,.52.8.8,0,0,0,.86-.82c0-1.13-2.23-1.3-2.23-2.57,0-.79.67-1.35,1.67-1.35a11.81,11.81,0,0,1,1.2.15s.06,0,.06,0,0,.29,0,.48v.67s-.08,0-.12,0-.16,0-.16,0a1.15,1.15,0,0,0-.25-.67,1.32,1.32,0,0,0-.79-.27.67.67,0,0,0-.69.69c0,1,2.24,1.3,2.24,2.56,0,1-.79,1.49-1.85,1.49" />
+<path d="M83.54,224a2.28,2.28,0,0,0,.54-.95l1.45-3.71s.17,0,.26,0,.28,0,.28,0l1.5,3.8a2.28,2.28,0,0,0,.51.86.86.86,0,0,0,.47.16s0,.06,0,.1a.37.37,0,0,1,0,.14H86.4a.49.49,0,0,1,0-.14s0-.1,0-.1c.3,0,.5-.1.5-.21a4.2,4.2,0,0,0-.37-1.12H84.76l-.09.23a3.27,3.27,0,0,0-.27.84c0,.15.24.22.58.26,0,0,0,.07,0,.1s0,.14,0,.14H83a.49.49,0,0,1,0-.14s0-.1,0-.1a1,1,0,0,0,.52-.16m1.34-1.56h1.49l-.77-1.93Z" />
+<path d="M90.49,222.51c0,1.4.08,1.52.17,1.56a1.43,1.43,0,0,0,.58.13.22.22,0,0,1,0,.12s0,.12,0,.12H88.83a.49.49,0,0,1,0-.14s0-.09,0-.1a1.62,1.62,0,0,0,.6-.13c.1,0,.16-.16.16-1.56V221.4c0-1.41-.09-1.52-.19-1.56a1.73,1.73,0,0,0-.57-.15s0,0,0-.08a.53.53,0,0,1,0-.15h2.42a1,1,0,0,1,0,.12s0,.11,0,.11a1.73,1.73,0,0,0-.58.15c-.09,0-.17.15-.17,1.56Z" />
+<path d="M97.37,219.84c-.07,0-.17.15-.17.91v1.76c0,.65,0,1.33,0,1.93,0,0-.22.06-.29.06a.21.21,0,0,1-.13,0l-3.66-3.56,0,2.23c0,.83.13.9.2.93a1.37,1.37,0,0,0,.57.13.22.22,0,0,1,0,.12s0,.12,0,.12H91.91s0-.1,0-.14,0-.09,0-.1a1.48,1.48,0,0,0,.58-.13c.07,0,.17-.16.17-.91V221.4c0-.65-.07-1.78-.07-2,0,0,0-.06.17-.06s.2,0,.2,0l3.73,3.69,0-2.33c0-.83-.13-.91-.2-.93a1.37,1.37,0,0,0-.57-.13.25.25,0,0,1,0-.12s0-.13,0-.13H98s0,.11,0,.15,0,.08,0,.1a1.48,1.48,0,0,0-.58.13" />
+<path d="M101.6,224.07a1.37,1.37,0,0,0,.57.13.24.24,0,0,1,0,.11,1.23,1.23,0,0,1,0,.13H99.79a.49.49,0,0,1,0-.14s0-.08,0-.1a1.42,1.42,0,0,0,.57-.13c.1,0,.16-.16.16-1.56v-1.69a6.89,6.89,0,0,0,0-1l-.39,0c-.81,0-1,.12-1.16.29a1.33,1.33,0,0,0-.24.61s0,0,0,0a.88.88,0,0,1-.23,0l.11-1.29a.07.07,0,0,1,.06-.06,17.57,17.57,0,0,0,2.37.12,9.29,9.29,0,0,0,2.39-.13.08.08,0,0,1,.06,0,10.89,10.89,0,0,1-.07,1.33l-.16,0c-.06,0-.11,0-.11,0a1,1,0,0,0-.15-.6c-.14-.16-.28-.29-1.14-.29l-.34,0a5.8,5.8,0,0,0,0,1v1.69c0,1.4.07,1.52.18,1.56" />
+<path d="M105.46,224.52a2.11,2.11,0,0,1-1.39-.46,2.88,2.88,0,0,1,0-.55c0-.18,0-.54,0-.73a.22.22,0,0,1,.12,0,.27.27,0,0,1,.13,0,2.19,2.19,0,0,0,.26.83,1.13,1.13,0,0,0,1,.52.8.8,0,0,0,.86-.82c0-1.13-2.23-1.3-2.23-2.57,0-.79.67-1.35,1.67-1.35a11.81,11.81,0,0,1,1.2.15s.06,0,.06,0a3.47,3.47,0,0,0,0,.48v.67s-.07,0-.11,0-.16,0-.16,0a1.16,1.16,0,0,0-.26-.67,1.27,1.27,0,0,0-.78-.27.66.66,0,0,0-.69.69c0,1,2.23,1.3,2.23,2.56,0,1-.78,1.49-1.84,1.49" />
+<path d="M89.92,214c-.18-.11-.32-.53-.32-3.32v-2.25c0-2.79.14-3.21.32-3.32a3.92,3.92,0,0,1,1.18-.21.29.29,0,0,0,.05-.19.21.21,0,0,0,0-.13H86.8s0,.06,0,.13,0,.17.07.19a3.88,3.88,0,0,1,1.16.21c.2.11.33.53.33,3.32v2.25c0,2.79-.13,3.21-.33,3.32a1.41,1.41,0,0,1-.36.11,3.09,3.09,0,0,1-.57,0c-1.08,0-2.2-1.18-4.25-4.26a3.47,3.47,0,0,0,1.85-2.9c0-1.17-1.16-2.45-3.44-2.45-.7,0-1.31,0-1.88,0s-1.35,0-2,0c0,0,0,.08,0,.16s0,.17.07.17a2.64,2.64,0,0,1,1,.21c.2.11.32.56.32,3.35v2.25c0,2.79-.12,3.21-.32,3.32a2.84,2.84,0,0,1-1,.21s-.07.09-.07.17,0,.15,0,.15h4.35a.22.22,0,0,0,0-.14.37.37,0,0,0,0-.18A6.1,6.1,0,0,1,80.3,214c-.19-.11-.32-.53-.32-3.32v-.4c.33,0,.59,0,.89,0l.75,0c1.24,2.11,2.07,3.21,2.86,3.75a3.48,3.48,0,0,0,2.13.5h4.51a.22.22,0,0,0,0-.14.28.28,0,0,0-.05-.18,3.92,3.92,0,0,1-1.18-.21m-8.58-4.25a2.75,2.75,0,0,1-1.27-.16c-.06-.07-.09-.24-.09-1.16a16.41,16.41,0,0,1,.15-3.22,2.55,2.55,0,0,1,1-.14c1.48,0,2,1.06,2,2.53,0,1.2-.59,2.15-1.85,2.15" />
+<image width="340" height="454" transform="translate(4 28.47) scale(0.33)" xlink:href="/wp-content/themes/churchnews/build/images/christus.d974d602.png" />
+</svg>
+</a>
+<div class="footer-symbol__desc d-block d-md-none">
+<div>The Church News is an official publication of The Church of Jesus Christ of Latter-day Saints.&nbsp;Jointly published by the Deseret News and The Church of Jesus Christ of Latter-day Saints, its content supports the doctrines, principles and practices of the Church.</div>
+</div>
+</div>
+</div>
+</footer>
+<script type='text/javascript' src='https://www.thechurchnews.com/wp-includes/js/wp-embed.min.js?ver=5.4.2'></script>
+<script src="/wp-content/themes/churchnews/build/page/article/index.2b3489b9.js"></script>
+</body>
+</html>
