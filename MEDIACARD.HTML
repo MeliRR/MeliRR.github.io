@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Card Assignment </title>
+    <style>
+         img {
+            max-width: 100%;
+        }
+
+        .card {
+            width: 320px;
+            box-shadow: 1px 1px 4px 1px #888;
+            border-radius: 3px 0 0 3px;
+            background-color: white;
+            overflow: hidden;
+            font-family: Arial sans-serif, , Helvetica, ;
+        }
+
+        .card p {
+            margin: 25px auto;
+            width: 90%;
+        }
+
+        .card footer {
+            display: grid;
+            grid-template-columns: 3em 3em auto;
+            align-items: center;
+            margin: 25px auto;
+            width: 90%;
+        }
+
+        .viewButton {
+            border-radius: 3px 0 0 3px;
+            color: #ccc;
+            background-color: #fff;
+            border: solid 1px #555;
+            padding: 10px;
+        }
+
+        .editButton {
+            border-radius: 0 3px 3px 0;
+            margin-left: -1px;
+            color: #ccc;
+            background-color: #fff;
+            border: solid 1px #555;
+            padding: 10px;
+        }
+
+        .time {
+            justify-self: right;
+            color: #888;
+        }
+    </style>
+</head>
+
+<body>
+    <article class="card">
+        <img src="https://picsum.photos/320/240" alt="photo" />
+        <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a
+            little bit longer.</p>
+        <footer>
+            <button class="viewButton" type="button">View</button>
+            <button class="editButton" type="button">Edit</button>
+            <span class="time">9 minutes</span>
+        </footer>
+    </article>
+</body>
+
+</html>
